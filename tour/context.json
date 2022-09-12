@@ -1,4 +1,113 @@
 {
-empty
+  
+  "@context": {
+    "tour" : "https://auroral.iot.linkeddata.es/def/tourism#",
+    "dc" : "http://purl.org/dc/terms",
+    "geo" : "http://www.w3.org/2003/01/geo/wgs84_pos",
+    "xsd" : "http://www.w3.org/2001/XMLSchema#",
+    "identifier" : {
+      "@id": "tour:identifier",
+      "@type": "xsd:string"
+  	},
+    "hidden_description" : {
+      "@id": "tour:hiddenDescription",
+      "@type": "xsd:string"
+  	},
+    "long_description" : {
+      "@id": "tour:longDescription",
+      "@type": "xsd:string"
+  	},
+    "short_description" : {
+      "@id": "tour:shortDescription",
+      "@type": "xsd:string"
+  	},
+    "bookable" : {
+      "@id": "tour:isBookable",
+      "@type": "xsd:boolean"
+  	},
+    "starts" : {
+      "@id": "tour:startDate",
+      "@type": "xsd:date"
+  	},
+    "ends" : {
+      "@id": "tour:endDate",
+      "@type": "xsd:date"
+  	},
+    "title" : {
+      "@id": "dc:title",
+      "@type": "xsd:string"
+  	},
+    "description" : {
+      "@id": "dc:description",
+      "@type": "xsd:string"
+  	},
+    "last_modification" : {
+      "@id": "dc:lastModified",
+      "@type": "xsd:date"
+  	},
+    "rights" : {
+      "@id": "dc:rights",
+      "@type": "xsd:string"
+  	},
+    "location" : {
+      "@id" : "geo:location",
+      "@type" : "@id",
+      "@context" : {
+        "geo" : "http://www.w3.org/2003/01/geo/wgs84_pos",
+        "lat" : {
+          "@id" : "geo:lat",
+          "@type" : "xsd:double"
+        },
+        "long" : {
+          "@id" : "geo:long",
+          "@type" : "xsd:double"
+        },
+        "alt" : {
+          "@id" : "geo:alt",
+          "@type" : "xsd:double"
+        } 
+      }
+    },
+    "channels" : {
+      "@id" : "tour:postedToChannel",
+      "@type" : "@id",
+       "@context" : {
+        "name" : { "@id" : "tour:channelName", "@type" : "xsd:string"}
+      }
+    },
+    "very_easy" : "tour:VeryEasy",
+    "easy" : "tour:Easy",
+    "medium" : "tour:Medium",
+    "hard" : "tour:Hard",
+    "very_hard" : "tour:VeryHard",
+    "difficulty" : {
+      "@id" : "tour:mapPoint",
+      "@type" : "@vocab"
+      
+    },
+    "price" : {
+      "@id" : "tour:hasStartingPrice",
+      "@type" : "@id",
+      "@context" : {
+        "amount" : { "@id" : "tour:amount", "@type" : "xsd:float"},
+        "currency" : {
+          "@id" : "tour:inCurrency",
+          "@type" : "@vocab"
+        },
+        "euro" : "tour:Euro",
+        "Euro" : "tour:Euro",
+        "€" : "tour:Euro",
+        "dollar" : "tour:Dollar",
+        "$" : "tour:Dollar"
+      }
+    }, 
+    "cover" : {
+      "@id" : "tour:coverImage",
+      "@type" : "@id",
+      "@context" : {
+        "src" : { "@id" : "foaf:depicts", "@type" : "rdfs:anyURI"}
 
+      }
+    } 
+  }
 }
