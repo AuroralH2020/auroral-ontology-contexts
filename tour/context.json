@@ -105,9 +105,47 @@
       "@id" : "tour:coverImage",
       "@type" : "@id",
       "@context" : {
-        "src" : { "@id" : "foaf:depicts", "@type" : "rdfs:anyURI"}
-
+        "img" : { "@id" : "foaf:depicts", "@type" : "rdfs:anyURI"},
+        "thumbnail" : { 
+          "@id" : "foaf:thumbnail", 
+          "@type" : "@id", 
+          "@context" : {
+             "img" : { "@id" : "foaf:depicts", "@type" : "rdfs:anyURI"}
+          }
+        }
       }
-    } 
+    },
+    "images" : {
+      "@id" : "tour:depiction",
+      "@type" : "@id",
+      "@context" : {
+        "img" : { "@id" : "foaf:depicts", "@type" : "rdfs:anyURI"},
+        "thumbnail" : { 
+          "@id" : "foaf:thumbnail", 
+          "@type" : "@id", 
+          "@context" : {
+             "img" : { "@id" : "foaf:depicts", "@type" : "rdfs:anyURI"}
+          }
+        }
+      }
+    },
+    "pictures" : {
+      "@id" : "tour:coverImage",
+      "@type" : "@id",
+      "@context" : {
+        "img" : { "@id" : "foaf:depicts", "@type" : "rdfs:anyURI"},
+        "thumbnail" : { 
+          "@id" : "foaf:thumbnail", 
+          "@type" : "@id", 
+          "@context" : {
+             "img" : { "@id" : "foaf:depicts", "@type" : "rdfs:anyURI"}
+          }
+        }
+      }
+    },
+    "language" : {
+      "@id" : "dc:language",
+      "@type" : "xsd:string"
+    }
   }
 }
