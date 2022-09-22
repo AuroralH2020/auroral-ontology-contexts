@@ -1,6 +1,7 @@
 {
   "@context" : {
     "core" : "https://auroral.iot.linkeddata.es/def/core#",
+    "lexvo" : "http://lexvo.org/ontology#",
     "name" : {
       "@id": "core:serviceName",
       "@type": "xsd:string"
@@ -52,6 +53,14 @@
      "version" : {
       "@id": "core:versionOfService",
       "@type": "xsd:string"
-  	}
+  	},
+    "language":{
+      "@id" : "lexvo:language",
+      "@type":"xsd:string"
+    },
+    "place":{
+      "@id":"core:Place",
+      "@type":"xsd:string"
+    }
   }
 }
