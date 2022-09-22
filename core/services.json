@@ -1,0 +1,57 @@
+{
+  "@context" : {
+    "core" : "https://auroral.iot.linkeddata.es/def/core#",
+    "name" : {
+      "@id": "core:serviceName",
+      "@type": "xsd:string"
+  	},
+    "service_description" : {
+      "@id": "core:serviceDescription",
+      "@type": "xsd:string"
+  	},
+    "provider" : {
+      "@id": "core:provider",
+      "@type": "xsd:string"
+  	},
+    "status" : {
+      "@id": "core:currentStatus",
+      "@type": "xsd:string"
+  	},
+    "modified" : {
+      "@id": "core:dateLastUpdate",
+      "@type": "xsd:datetime"
+  	},
+    "domain" : {
+      "@id": "core:hasDomain",
+      "@type": "xsd:string"
+  	},
+    "subdomain" : {
+      "@id": "core:hasSubDomain",
+      "@type": "xsd:string"
+  	},
+    "functionalities" : {
+      "@id": "core:hasFunctionalities",
+      "@type": "xsd:string"
+  	},
+    "requirements" : {
+      "@id": "core:hasRequirements",
+      "@type": "xsd:string"
+  	},
+    "is_free" : {
+      "@id": "core:serviceFree",
+      "@type": "xsd:boolean"
+  	},
+     "url" : {
+      "@id": "core:hasURL",
+      "@type": "xsd:anyURI"
+  	},
+     "downloaded" : {
+      "@id": "core:numberOfDownloads",
+      "@type": "xsd:int"
+  	},
+     "version" : {
+      "@id": "core:versionOfService",
+      "@type": "xsd:string"
+  	},
+  }
+}
