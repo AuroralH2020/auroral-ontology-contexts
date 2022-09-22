@@ -52,6 +52,6 @@
      "version" : {
       "@id": "core:versionOfService",
       "@type": "xsd:string"
-  	},
+  	}
   }
 }
