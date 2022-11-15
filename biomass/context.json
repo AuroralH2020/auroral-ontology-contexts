@@ -90,6 +90,28 @@
         "@id" : "https://auroral.iot.linkeddata.es/def/biomass#hasType",
         "@type" : "@vocab"
       },
+      "group" : {
+        "@id" : "https://auroral.iot.linkeddata.es/def/biomass#hasGroup",
+        "@type" : "@id",
+        "@context" : {
+          "id" :{
+            "@id" : "https://auroral.iot.linkeddata.es/def/biomass#hasID",
+            "@type" : "http://www.w3.org/2001/XMLSchema#string"
+          },
+          "description" : {
+            "@id" : "https://auroral.iot.linkeddata.es/def/biomass#hasDescription",
+            "@type" : "http://www.w3.org/2001/XMLSchema#string"
+          },
+          "name" : {
+            "@id" : "https://auroral.iot.linkeddata.es/def/biomass#hasName",
+            "@type" : "http://www.w3.org/2001/XMLSchema#string"
+          }
+        }
+      },
+      "subgroup" : {
+        "@id" : "https://auroral.iot.linkeddata.es/def/biomass#hasSubGroup",
+        "@type" : "@vocab"
+      },
       "bark-from-forestry-operations":"https://auroral.iot.linkeddata.es/def/biomass#BarkFromForestryOperations",
       "berries":"https://auroral.iot.linkeddata.es/def/biomass#Berries",
       "blends-and-mixtures-algae":"https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesAlgae",
