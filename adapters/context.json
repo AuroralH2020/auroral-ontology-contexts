@@ -20,13 +20,13 @@
             "@id" : "https://www.w3.org/2022/wot/td/v1.1#hasValueType",
             "@type" : "@vocab"
           },
-          "object": "jsonschema:ObjectSchema",
+          "object": "https://www.w3.org/2019/wot/json-schema#ObjectSchema",
           "array": "https://www.w3.org/2019/wot/json-schema#ArraySchema",
-          "boolean": "jsonschema:BooleanSchema",
-          "string": "jsonschema:StringSchema",
-          "number": "jsonschema:NumberSchema",
-          "integer": "jsonschema:IntegerSchema",
-          "null": "jsonschema:NullSchema",
+          "boolean": "https://www.w3.org/2019/wot/json-schema#BooleanSchema",
+          "string": "https://www.w3.org/2019/wot/json-schema#StringSchema",
+          "number": "https://www.w3.org/2019/wot/json-schema#NumberSchema",
+          "integer": "https://www.w3.org/2019/wot/json-schema#IntegerSchema",
+          "null": "https://www.w3.org/2019/wot/json-schema#NullSchema",
           "property":{
             "@id" : "https://saref.etsi.org/core/aboutProperty",
             "@type" : "@vocab"
