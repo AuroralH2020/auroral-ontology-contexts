@@ -1,0 +1,102 @@
+{
+    "@context" : {
+      "id" : {
+        "@id" : "https://auroral.iot.linkeddata.es/def/core#hasID",
+        "@type" : "http://www.w3.org/2001/XMLSchema#string"
+      },
+      "measurement":{
+        "@id" : "https://saref.etsi.org/core/makesMeasurement",
+        "@type" : "@id",
+        "@context" : {
+          "timestamp" : {
+            "@id" : "https://saref.etsi.org/core/hasTimestamp",
+            "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+          },
+          "value" : {
+            "@id" : "https://saref.etsi.org/core/hasValue",
+            "@type" : "http://www.w3.org/2001/XMLSchema#string"
+          },
+          "type" : {
+            "@id" : "https://www.w3.org/2022/wot/td/v1.1#hasValueType",
+            "@type" : "@vocab"
+          },
+          "object": "jsonschema:ObjectSchema",
+          "array": "https://www.w3.org/2019/wot/json-schema#ArraySchema",
+          "boolean": "jsonschema:BooleanSchema",
+          "string": "jsonschema:StringSchema",
+          "number": "jsonschema:NumberSchema",
+          "integer": "jsonschema:IntegerSchema",
+          "null": "jsonschema:NullSchema",
+          "property":{
+            "@id" : "https://saref.etsi.org/core/aboutProperty",
+            "@type" : "@vocab"
+          },
+          "lightcolor":"https://auroral.iot.linkeddata.es/def/adapters#LightColor",
+          "illuminance":"https://auroral.iot.linkeddata.es/def/adapters#Illuminance",
+          "batteryLevel":"https://auroral.iot.linkeddata.es/def/adapters#BatteryLevel",
+        }
+      },
+      "status":{
+        "@id" : "https://auroral.iot.linkeddata.es/def/adapters#StatusProperty",
+        "@type" : "@vocab"
+      },
+      "saref-property":{
+        "@id" : "https://saref.etsi.org/core#Property",
+        "@type" : "@vocab"
+      },
+      "core-sensor":{
+        "@id": "https://auroral.iot.linkeddata.es/def/core#Sensor",
+        "@type": "@vocab"
+      },
+      "ambient-property":{
+        "@id": "https://auroral.iot.linkeddata.es/def/adapters#AmbientProperty",
+        "@type": "@vocab" 
+      },
+      "status-act-reason":"https://auroral.iot.linkeddata.es/def/adapters#ActReason",
+      "status-alert":"https://auroral.iot.linkeddata.es/def/core#Alert",
+      "status-error":"https://auroral.iot.linkeddata.es/def/core#Error",
+      "status-presence":"https://auroral.iot.linkeddata.es/def/core#Presence",
+      "status-storage-capacity":"https://auroral.iot.linkeddata.es/def/core#StorageCapacity",
+      "status-switch":"https://auroral.iot.linkeddata.es/def/core#SwitchStatus",
+      "saref-property-accumulated-precipitation":"https://auroral.iot.linkeddata.es/def/adapters#AccumulatedPercipitation",
+      "saref-property-ambient-property":"https://auroral.iot.linkeddata.es/def/adapters#AmbientProperty",
+      "saref-property-energy-property":"https://auroral.iot.linkeddata.es/def/adapters#EnergyProperty",
+      "saref-property-health-property":"https://auroral.iot.linkeddata.es/def/adapters#HealthProperty",
+      "saref-property-light-property":"https://auroral.iot.linkeddata.es/def/adapters#LightProperty",
+      "saref-property-motion-property":"https://auroral.iot.linkeddata.es/def/adapters#MotionProperty",
+      "saref-property-soil-moisture":"https://auroral.iot.linkeddata.es/def/adapters#SoilMoisture",
+      "saref-property-sound":"https://auroral.iot.linkeddata.es/def/adapters#Sound",
+      "saref-property-space-property": "https://auroral.iot.linkeddata.es/def/adapters#SpaceProperty",
+      "saref-property-status-property": "https://auroral.iot.linkeddata.es/def/adapters#StatusProperty",
+      "saref-property-TRAFX-property": "https://auroral.iot.linkeddata.es/def/adapters#TRAFXProperty",
+      "core-sensor-air-quality-sensor":"https://auroral.iot.linkeddata.es/def/adapters#AirQualitySensor",
+      "core-sensor-energy-monitor":"https://auroral.iot.linkeddata.es/def/adapters#EnergyMonitor",
+      "core-sensor-flood-sensor":"https://auroral.iot.linkeddata.es/def/adapters#FloodSensor",
+      "core-sensor-gps-emergency-button":"https://auroral.iot.linkeddata.es/def/adapters#GPSEmergencyButton",
+      "core-sensor-humidity-sensor":"https://auroral.iot.linkeddata.es/def/adapters#HumiditySensor",
+      "core-sensor-light-bulb":"https://auroral.iot.linkeddata.es/def/adapters#LightBulb",
+      "core-sensor-monitoring-sensor":"https://auroral.iot.linkeddata.es/def/adapters#MonitoringSensor",
+      "core-sensor-motion-sensor":"https://auroral.iot.linkeddata.es/def/adapters#MotionSensor",
+      "core-sensor-pv":"https://auroral.iot.linkeddata.es/def/adapters#PV",
+      "core-sensor-person-counter-sensor":"https://auroral.iot.linkeddata.es/def/adapters#PersonCounterSensor",
+      "core-sensor-presence_-sensor":"https://auroral.iot.linkeddata.es/def/adapters#Presence_Sensor",
+      "core-sensor-qr-generator-sensor":"https://auroral.iot.linkeddata.es/def/adapters#QRGeneratorSensor",
+      "core-sensor-smart-plug":"https://auroral.iot.linkeddata.es/def/adapters#SmartPlug",
+      "core-sensor-soil-moisture-sensor":"https://auroral.iot.linkeddata.es/def/adapters#SoilMoistureSEnsor",
+      "core-sensor-thermometer":"https://auroral.iot.linkeddata.es/def/adapters#Thermometer",
+      "core-sensor-waste-bin-sensor":"https://auroral.iot.linkeddata.es/def/adapters#WasteBinSensor",
+      "core-sensor-water-amr-sensor":"https://auroral.iot.linkeddata.es/def/adapters#WaterAMRSensor",
+      "core-sensor-weather-sensor":"https://auroral.iot.linkeddata.es/def/adapters#WeatherSensor",
+      "core-sensor-battery-sensor":"https://auroral.iot.linkeddata.es/def/core#BatterySensor",
+      "ambient-property-air-quality":"https://auroral.iot.linkeddata.es/def/adapters#AirQuality",
+      "ambient-property-ambient-solar-radiation":"https://auroral.iot.linkeddata.es/def/adapters#AmbientSolarRadiation",
+      "ambient-property-flood-ambient-property":"https://auroral.iot.linkeddata.es/def/adapters#FloodAmbientProperty",
+      "ambient-property-humidity-ambient-property":"https://auroral.iot.linkeddata.es/def/adapters#HumidityAmbientProperty",
+      "ambient-property-noise":"https://auroral.iot.linkeddata.es/def/adapters#Noise",
+      "ambient-property-percipitation":"https://auroral.iot.linkeddata.es/def/adapters#Percipitation",
+      "ambient-property-pressure":"https://auroral.iot.linkeddata.es/def/adapters#Pressure",
+      "ambient-property-temperature-ambient-property":"https://auroral.iot.linkeddata.es/def/adapters#TemperatureAmbientProperty",
+      "ambient-property-weather":"https://auroral.iot.linkeddata.es/def/adapters#Weather",
+      "ambient-property-wind-ambient-property":"https://auroral.iot.linkeddata.es/def/adapters#WindAmbientProperty"
+    }
+  }
