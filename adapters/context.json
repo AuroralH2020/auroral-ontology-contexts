@@ -33,7 +33,7 @@
           },
           "lightcolor":"https://auroral.iot.linkeddata.es/def/adapters#LightColor",
           "illuminance":"https://auroral.iot.linkeddata.es/def/adapters#Illuminance",
-          "batteryLevel":"https://auroral.iot.linkeddata.es/def/adapters#BatteryLevel",
+          "batteryLevel":"https://auroral.iot.linkeddata.es/def/adapters#BatteryLevel"
         }
       },
       "status":{
