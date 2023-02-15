@@ -64,9 +64,19 @@
         "kilogram" : "http://www.ontology-of-units-of-measure.org/resource/om-2/kilogram",
         "kelvin" : "http://www.ontology-of-units-of-measure.org/resource/om-2/kelvin",
         "litre" : "http://www.ontology-of-units-of-measure.org/resource/om-2/litre",
-        "hasTemporalUnit": {
+        "unitHour": {
           "@id": "https://auroral.iot.linkeddata.es/def/core#hasTemporalUnit",
-          "@type": "@vocab"
+           "@type": "@id",
+            "@context": {
+              "minutes": {
+                "@id": "https://www.w3.org/2006/time#minutes",
+                "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+               },
+              "hours": {
+                "@id": "https://www.w3.org/2006/time#hours",
+                "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+               }
+            }
         }
       }
     },
