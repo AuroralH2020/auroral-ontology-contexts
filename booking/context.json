@@ -1,0 +1,60 @@
+{
+    "@version": 1.1,
+    "core": "https://auroral.iot.linkeddata.es/def/core#",
+    "book": "https://auroral.iot.linkeddata.es/def/car-booking#",
+    "id":"book:identifier",
+    "created":"book:created",
+    "reservation_start":"book:reservationStart",
+    "reservation_end":"book:reservationEnd",
+    "buffered_end":"book:bufferedEnd",
+    "state":"book:state",
+    "lift_offer":"book:liftOffer",
+    "note":"book:note",
+    "purpose":"book:purpose",
+    "user":{
+        "@id":"book:makesReservation",
+        "@type":"@id",
+        "@context":{
+            "name":"core:hasName",
+            "id": "core:hasID",
+            "first_name": "core:hasFirstName",
+            "last_name": "core:hasLastName",
+            "email":"core:hasEmail",
+            "contact_mail":"core:hasContactMail",
+            "location":"core:hasLocation",
+            "ocuppation":"core:hasOccupation",
+            "status":"core:hasStatus",
+            "creation_date":"core:hasCreationDate",
+            "address":{
+                "@id":"book:hasAddress",
+                "@type":"@id",
+                "@context":{
+                    "address":"book:address",
+                    "city":"book:city",
+                    "zip":"book:zip"
+                }
+            }
+        }
+    },
+    "vehicle":{
+        "@id":"book:relatedTo",
+        "@type": "@id",
+        "@context":{
+            "id": "book:hasIdentifier",
+            "type": "book:type",
+            "label": "book:label",
+            "brand": "book:brand",
+            "model": "book:model",
+            "timezone": "book:timeZone",
+            "address":{
+                "@id":"book:hasAddress",
+                "@type":"@id",
+                "@context":{
+                    "address":"book:address",
+                    "city":"book:city",
+                    "zip":"book:zip"
+                }
+            }
+        }
+    }
+}
