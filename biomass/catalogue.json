@@ -1,56 +1,122 @@
 {
-    "@context": {
+    "@context":{
         "@version": 1.1,
         "xsd": "http://www.w3.org/2001/XMLSchema#",
         "biom": "https://auroral.iot.linkeddata.es/def/biomass#",
-        "id": "biom:hasID",
-        "name": "biom:hasName",
-        "tradingForm": "biom:TradingForm",
-        "dimension": "biom:dimension",
-        "primaryEnergyCost": "biom:primaryEnergyCost",
-        "primaryEnergyCostObs": "biom:primaryEnergyCostObs",
-        "pciKwhPerKg": "biom:pciKwhPerKg",
-        "pcimjPerKg": "biom:pcimjPerKg",
+        "id": {
+            "@id":"biom:hasID",
+            "@type":"xsd:string"
+        },
+        "name": {
+            "@id":"biom:hasName",
+            "@type":"xsd:string"
+        },
+        "tradingForm": {
+            "@id":"biom:TradingForm",
+            "@type":"xsd:string"
+        },
+        "dimension": {
+            "@id":"biom:dimension",
+            "@type":"xsd:string"
+        },
+        "primaryEnergyCost": {
+            "@id":"biom:primaryEnergyCost",
+            "@type":"xsd:string"
+        },
+        "primaryEnergyCostObs": {
+            "@id":"biom:primaryEnergyCostObs",
+            "@type":"xsd:string"
+        },
+        "pciKwhPerKg": {
+            "@id":"biom:pciKwhPerKg",
+            "@type":"xsd:string"
+        },
+        "pcimjPerKg": {
+            "@id":"biom:pcimjPerKg",
+            "@type":"xsd:string"
+        },
         "origin": {
             "@id": "biom:hasOrigin",
             "@type": "@id",
             "@context": {
-                "id": "biom:hasID",
-                "description": "biom:hasDescription",
+                "id": {
+                    "@id":"biom:hasID",
+                    "@type":"xsd:string"
+                },
+                "description": {
+                    "@id":"biom:hasDescription",
+                    "@type":"xsd:string"
+                },
                 "group": {
                     "@id": "biom:hasGroup",
                     "@type": "@vocab",
                     "@context": {
-                        "id": "biom:hasID",
-                        "description": "biom:hasDescription",
-                        "name": "biom:hasName"
+                        "id": {
+                            "@id":"biom:hasID",
+                            "@type":"xsd:string"
+                        },
+                        "description": {
+                            "@id":"biom:hasDescription",
+                            "@type":"xsd:string"
+                        },
+                        "name": {
+                            "@id":"biom:hasName",
+                            "@type":"xsd:string"
+                        } 
                     }
                 },
                 "subgroup":{
                     "@id":"biom:hasSubGroup",
                     "@type":"@vocab",
                     "@context": {
-                        "id": "biom:hasID",
-                        "description": "biom:hasDescription",
-                        "name": "biom:hasName"
+                        "id": {
+                            "@id":"biom:hasID",
+                            "@type":"xsd:string"
+                        },
+                        "description": {
+                            "@id":"biom:hasDescription",
+                            "@type":"xsd:string"
+                        },
+                        "name": {
+                            "@id":"biom:hasName",
+                            "@type":"xsd:string"
+                        } 
                     }
                 },
                 "type":{
                     "@id":"biom:belongsToType",
                     "@type":"@vocab",
                     "@context": {
-                        "id": "biom:hasID",
-                        "description": "biom:hasDescription",
-                        "name": "biom:hasName"
+                        "id": {
+                            "@id":"biom:hasID",
+                            "@type":"xsd:string"
+                        },
+                        "description": {
+                            "@id":"biom:hasDescription",
+                            "@type":"xsd:string"
+                        },
+                        "name": {
+                            "@id":"biom:hasName",
+                            "@type":"xsd:string"
+                        } 
                     }
                 },
                 "subtype":{
                     "@id":"biom:hasSubType",
                     "@type":"@vocab",
                     "@context": {
-                        "id": "biom:hasID",
-                        "description": "biom:hasDescription",
-                        "name": "biom:hasName"
+                        "id": {
+                            "@id":"biom:hasID",
+                            "@type":"xsd:string"
+                        },
+                        "description": {
+                            "@id":"biom:hasDescription",
+                            "@type":"xsd:string"
+                        },
+                        "name": {
+                            "@id":"biom:hasName",
+                            "@type":"xsd:string"
+                        } 
                     }
                 }
             }
@@ -59,18 +125,36 @@
             "@id": "biom:hasHumidity",
             "@type": "@id",
             "@context": {
-                "id": "biom:hasID",
-                "name": "biom:hasName",
-                "description": "biom:hasDescription"
+                "id": {
+                    "@id":"biom:hasID",
+                    "@type":"xsd:string"
+                },
+                "description": {
+                    "@id":"biom:hasDescription",
+                    "@type":"xsd:string"
+                },
+                "name": {
+                    "@id":"biom:hasName",
+                    "@type":"xsd:string"
+                }
             }
         },
         "aches": {
             "@id": "biom:hasAches",
             "@type": "@id",
             "@context": {
-                "id": "biom:hasID",
-                "name": "biom:hasName",
-                "description": "biom:hasDescription"
+                "id": {
+                    "@id":"biom:hasID",
+                    "@type":"xsd:string"
+                },
+                "description": {
+                    "@id":"biom:hasDescription",
+                    "@type":"xsd:string"
+                },
+                "name": {
+                    "@id":"biom:hasName",
+                    "@type":"xsd:string"
+                }
             }
         },
         "algae": "biom:Algae",
