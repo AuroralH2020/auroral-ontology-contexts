@@ -1,0 +1,80 @@
+{
+  "@context": {
+    "cellId": {
+      "@id": "https://auroral.iot.linkeddata.es/def/cell#cellId",
+      "@type": "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "created": {
+      "@id": "https://auroral.iot.linkeddata.es/def/cell#created",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "hasRange": {
+      "@id": "https://auroral.iot.linkeddata.es/def/cell#hasRange",
+      "@type": "@id",
+      "@context": {
+        "range": {
+          "@id": "https://auroral.iot.linkeddata.es/def/cell#range",
+          "@type": "http://www.w3.org/2001/XMLSchema#string"
+         }
+      }
+    },
+    "hasOperator": {
+      "@id": "https://auroral.iot.linkeddata.es/def/cell#hasOperator",
+      "@type": "@id",
+      "@context": {
+        "operatorId": {
+          "@id": "https://auroral.iot.linkeddata.es/def/cell#operatorId",
+          "@type": "http://www.w3.org/2001/XMLSchema#string"
+         },
+         "operatorName": {
+          "@id": "https://auroral.iot.linkeddata.es/def/cell#operatorName",
+          "@type": "http://www.w3.org/2001/XMLSchema#string"
+         }
+      }
+    },
+    "country": {
+      "@id": "https://auroral.iot.linkeddata.es/def/cell#country",
+      "@type": "@id",
+      "@context": {
+        "code": {
+          "@id": "https://auroral.iot.linkeddata.es/def/core#code",
+          "@type": "http://www.w3.org/2001/XMLSchema#string"
+         },
+         "name": {
+          "@id": "https://auroral.iot.linkeddata.es/def/core#name",
+          "@type": "http://www.w3.org/2001/XMLSchema#string"
+         }
+      }
+    },
+    "location": {
+      "@id": "http://www.owl-ontologies.com/geo#location",
+      "@type": "@id",
+      "@context": {
+        "lat": {
+          "@id": "http://www.w3.org/2003/01/geo/wgs84_pos#lat",
+          "@type": "http://www.w3.org/2001/XMLSchema#double"
+         },
+         "long": {
+          "@id": "http://www.w3.org/2003/01/geo/wgs84_pos#long",
+          "@type": "http://www.w3.org/2001/XMLSchema#double"
+         }
+      }
+    },
+    "providesNetwork": {
+      "@id": "https://auroral.iot.linkeddata.es/def/cell#providesNetwork",
+      "@type": "@vocab",
+      "@context": {
+        "networkCode": {
+          "@id": "https://auroral.iot.linkeddata.es/def/cell#networkCode",
+          "@type": "http://www.w3.org/2001/XMLSchema#string"
+         }
+      }
+    },
+    "LTE": "https://auroral.iot.linkeddata.es/def/cell#LTE",
+    "GSM": "https://auroral.iot.linkeddata.es/def/cell#GSM",
+    "UMTS": "https://auroral.iot.linkeddata.es/def/cell#UMTS",
+    "4G": "https://auroral.iot.linkeddata.es/def/cell#4G",
+    "5G": "https://auroral.iot.linkeddata.es/def/cell#5G",
+    "CDMA": "https://auroral.iot.linkeddata.es/def/cell#CDMA"
+  }
+}
