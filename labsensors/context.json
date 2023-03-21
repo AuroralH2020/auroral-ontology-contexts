@@ -20,6 +20,7 @@
                 }
             }
         },
+        "sensor": "adapters:Sensor",
         "accelerometer": "adapters:Accelerometer",
         "airQualitySensor": "adapters:AirQualitySensor",
         "coolingSensor": "adapters:CoolingSensor",
