@@ -29,6 +29,7 @@
                 "longitude":"geo:long"
             }
         },
+        "device": "core:Device",
         "accelerometer": "adapters:Accelerometer",
         "airQualitySensor": "adapters:AirQualitySensor",
         "coolingSensor": "adapters:CoolingSensor",
