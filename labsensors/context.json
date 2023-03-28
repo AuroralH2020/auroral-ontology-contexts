@@ -148,6 +148,6 @@
         "xAxisAcceleration": "adapters:XAxisAcceleration",
         "yAxisAcceleration": "adapters:YAxisAcceleration",
         "zAxisAcceleration": "adapters:ZAxisAcceleration",
-        "windSpeed": "adapters:windSpeed"
+        "windSpeed": "adapters:WindSpeed"
     }
 }
