@@ -5,6 +5,7 @@
         "adapters": "https://auroral.iot.linkeddata.es/def/adapters#",
         "saref": "https://saref.etsi.org/core#",
         "geo": "http://www.w3.org/2003/01/geo/wgs84_pos",
+        "om": "http://www.ontology-of-units-of-measure.org/page/om-2",
         "id": "core:hasId",
         "serial": "core:serialNumber",
         "version": "core:versionNumber",
@@ -17,6 +18,10 @@
                 "value": "saref:hasValue",
                 "relates": {
                     "@id": "saref:relatesToProperty",
+                    "@type": "@vocab"
+                },
+                "measuredIn":{
+                    "@id":"saref:isMeasuredIn",
                     "@type": "@vocab"
                 }
             }
@@ -148,6 +153,14 @@
         "xAxisAcceleration": "adapters:XAxisAcceleration",
         "yAxisAcceleration": "adapters:YAxisAcceleration",
         "zAxisAcceleration": "adapters:ZAxisAcceleration",
-        "windSpeed": "adapters:WindSpeed"
+        "windSpeed": "adapters:windSpeed",
+        "relativeHumidityUnit": "om:Percentage",
+        "hectopascal": "hectopascal",
+        "degreeCelcius": "om:degreeCelcius",
+        "lux":"om:lux",
+        "partsPerMillion": "om:PartsPerMillion",
+        "wattPerSquareMetre": "om:wattPerSquareMetre",
+        "metrePerSecond": "om:PrefixedMetrePerSecond-Time",
+        "decibel": "core:Decibel"
     }
 }
