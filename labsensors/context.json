@@ -155,7 +155,7 @@
         "zAxisAcceleration": "adapters:ZAxisAcceleration",
         "windSpeed": "adapters:windSpeed",
         "relativeHumidityUnit": "om:Percentage",
-        "hectopascal": "hectopascal",
+        "hectopascal": "om:hectopascal",
         "degreeCelcius": "om:degreeCelcius",
         "lux":"om:lux",
         "partsPerMillion": "om:PartsPerMillion",
