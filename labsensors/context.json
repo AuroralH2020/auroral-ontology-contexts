@@ -4,6 +4,7 @@
         "core": "https://auroral.iot.linkeddata.es/def/core#",
         "adapters": "https://auroral.iot.linkeddata.es/def/adapters#",
         "saref": "https://saref.etsi.org/core#",
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos",
         "id": "core:hasId",
         "serial": "core:serialNumber",
         "version": "core:versionNumber",
@@ -20,7 +21,14 @@
                 }
             }
         },
-        "sensor": "adapters:Sensor",
+        "location": {
+            "@id": "geo:location",
+            "@type": "@id",
+            "@context": {
+                "latitude":"geo:lat",
+                "longitude":"geo:long"
+            }
+        },
         "accelerometer": "adapters:Accelerometer",
         "airQualitySensor": "adapters:AirQualitySensor",
         "coolingSensor": "adapters:CoolingSensor",
