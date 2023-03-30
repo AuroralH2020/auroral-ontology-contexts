@@ -1,0 +1,28 @@
+{
+    "@context": {
+        "@version": 1.1,
+        "s4city": "https://w3id.org/def/saref4city#",
+        "geosp": "http://www.opengis.net/ont/geosparql#",
+        "saref": "https://saref.etsi.org/core#",
+        "terms": "http://purl.org/dc/terms/#",
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "id": "core:hasId",
+        "facility":{
+            "@id": "geosp:sfWithin",
+            "@type": "@id",
+            "@context": {
+                "id": "saref:hasId",
+                "title": "terms:title",
+                "description": "terms:description",
+                "location": {
+                    "@id": "geo:location",
+                    "@type": "@id",
+                    "@context":{
+                        "latitude":"geo:lat",
+                        "longitude":"geo:long"
+                    }
+                }
+            }
+        }
+    }
+}
