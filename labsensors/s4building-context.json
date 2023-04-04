@@ -1,0 +1,33 @@
+{
+    "@context": {
+        "@version": 1.1,
+        "s4bldg": "https://saref.etsi.org/saref4bldg/",
+        "saref": "https://saref.etsi.org/core#",
+        "terms": "http://purl.org/dc/terms/#",
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "id": "core:hasId",
+        "buildingSpace": {
+            "@id": "s4bldg:isContainedIn",
+            "@type": "@id",
+            "@context": {
+                "title": "terms:title",
+                "description": "terms:description",
+                "building": {
+                    "@id": "s4bldg:isSpaceOf",
+                    "@type": "@id",
+                    "@context": {
+                        "id": "saref:hasId",
+                        "location": {
+                            "@id": "geo:location",
+                            "@type": "@id",
+                            "@context": {
+                                "lat": "geo:lat",
+                                "long": "geo:long"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
