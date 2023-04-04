@@ -5,6 +5,8 @@
         "adapters": "https://auroral.iot.linkeddata.es/def/adapters#",
         "saref": "https://saref.etsi.org/core#",
         "om": "http://www.ontology-of-units-of-measure.org/page/om-2#",
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "s4bldg": "https://saref.etsi.org/saref4bldg/",
         "id": "core:hasId",
         "serial": "core:serialNumber",
         "version": "core:versionNumber",
@@ -23,6 +25,14 @@
                     "@id":"saref:isMeasuredIn",
                     "@type": "@vocab"
                 }
+            }
+        },
+        "location":{
+            "@id":"geo:location",
+            "@type": "@id",
+            "@context": {
+                "lat": "geo:lat",
+                "long": "geo:long"
             }
         },
         "device": "core:Device",
