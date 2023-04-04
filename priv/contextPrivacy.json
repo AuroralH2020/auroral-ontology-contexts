@@ -1,0 +1,28 @@
+{
+  "@context": {
+    "priv": "https://auroral.iot.linkeddata.es/def/privacy#",
+    "core": "https://auroral.iot.linkeddata.es/def/core#",
+    "rule": {
+      "@id": "priv:definesRule",
+      "@type": "@id",
+      "@context": {
+        "action": {
+          "@id": "priv:hasAction",
+          "@type": "@id"
+        },
+        "ruletarget": {
+          "@id": "priv:hasRuleTarget",
+          "@type": "@id"
+        }
+      }
+    },
+    "item": {
+      "@id": "priv:hasPolicy",
+      "@type": "@id"
+    },
+    "friend": "priv:Friends",
+    "all": "priv:All",
+    "visibility": "priv:Visibility",
+    "acessibility": "priv:Accessibility"
+  }
+}
