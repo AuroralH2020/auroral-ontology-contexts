@@ -1,0 +1,68 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "cow": "https://auroral.iot.linkeddata.es/def/cow#",
+    "adapters": "https://auroral.iot.linkeddata.es/def/adapters#",
+    "saref": "saref:https://saref.etsi.org/core#",
+    "id": "cow:idAnimal",
+    "birth": "cow:birthDate",
+    "group": "cow:group",
+    "breeding": {
+      "@id": "cow:hasBreeding",
+      "@type": "@id"
+    },
+    "activity": {
+      "@id": "cow:hasActivity",
+      "@type": "@id",
+      "@context": {
+        "relative-activity": "cow:relativeActivity",
+        "probability-activity": "cow:probabilityOfHighActivity"
+      }
+    },
+    "status": {
+      "@id": "cow:reproductivestatus",
+      "@type": "@id",
+      "@context": {
+        "insemination": "cow:daysSinceLastInsemination"
+      }
+    },
+    "sensor": {
+      "@id": "cow:hasSensor",
+      "@type": "@id",
+      "@context": {
+        "accelerometer": "adapters:Accelerometer",
+        "measure": {
+          "@id": "saref:measureProperty",
+          "@type": "@id",
+          "@context": {
+            "xacceleration": "adapters:XAxisAcceleration",
+            "yacceleration": "adapters:YAxisAcceleration",
+            "zacceleration": "adapters:ZAxisAcceleration"
+          }
+        }
+      }
+    },
+
+    "animal-cow": {
+      "@id": "https://auroral.iot.linkeddata.es/def/cow#Cow",
+      "@type": "@id",
+      "lactation": {
+        "@id": "cow:hasLactation",
+        "@type": "@id",
+        "@context": {
+          "lactation-day": "cow:lactationDays"
+        }
+      }
+    },
+    "animal-heifer": {
+      "@id": "https://auroral.iot.linkeddata.es/def/cow#Heifer",
+      "@type": "@id"
+    },
+    "Pregnant": {"cow:Pregnant"
+}
+    "inseminated": "cow:Inseminated",
+    "toundergo": "cow:ToUndergoArtificialInsemination",
+    "notneed": "cow:DoesNotNeedArtificialInsemination",
+    "delivery": "cow:recentDelivery"
+  }
+}
