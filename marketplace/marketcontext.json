@@ -1,0 +1,58 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "market": "https://auroral.iot.linkeddata.es/def/market#",
+    "identifier": "market:hasId",
+    "name": "market:name",
+    "buy": {
+      "@id": "market:buy",
+      "@type": "@id",
+      "@context": {
+        "productId": "market:productId",
+        "productname": "market:productName",
+        "quantity": {
+          "@id": "market:hasQuantity",
+          "@type": "@id",
+          "@context": {
+            "stockId": "market:stockId",
+            "stockQuantity": "market:stockQuantity"
+          }
+        },
+        "category": {
+          "@id": "market:hasCategory",
+          "@type": "@id",
+          "@context": {
+            "categoryId": "market:stockId",
+            "categoryName": "market:stockQuantity",
+            "categoryType": "market:categoryType"
+          }
+        }
+      }
+    },
+    "sell": {
+      "@id": "market:buy",
+      "@type": "@id",
+      "@context": {
+        "productId": "market:productId",
+        "productname": "market:productName",
+        "quantity": {
+          "@id": "market:hasQuantity",
+          "@type": "@id",
+          "@context": {
+            "stockId": "market:stockId",
+            "stockQuantity": "market:stockQuantity"
+          }
+        },
+        "category": {
+          "@id": "market:hasCategory",
+          "@type": "@id",
+          "@context": {
+            "categoryId": "market:stockId",
+            "categoryName": "market:stockQuantity",
+            "categoryType": "market:categoryType"
+          }
+        }
+      }
+    }
+  }
+}
