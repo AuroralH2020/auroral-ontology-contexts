@@ -31,8 +31,8 @@
             "@id":"geo:location",
             "@type": "@id",
             "@context": {
-                "lat": "geo:lat",
-                "long": "geo:long"
+                "latitude": "geo:lat",
+                "longitude": "geo:long"
             }
         },
         "device": "core:Device",
