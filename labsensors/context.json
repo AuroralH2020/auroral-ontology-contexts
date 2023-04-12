@@ -162,6 +162,7 @@
         "partsPerMillion": "om:PartsPerMillion",
         "wattPerSquareMetre": "om:wattPerSquareMetre",
         "metrePerSecond": "om:PrefixedMetrePerSecond-Time",
-        "decibel": "core:Decibel"
+        "decibel": "core:Decibel",
+        "number":"om:Number"
     }
 }
