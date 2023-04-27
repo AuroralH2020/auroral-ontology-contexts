@@ -1,0 +1,18 @@
+{
+    "@context": {
+        "@version": 1.1,
+        "geosparql": "http://www.opengis.net/ont/geosparql#",
+        "s4bldg": "https://saref.etsi.org/saref4bldg/",
+        "sdo":"https://schema.org",
+        "saref": "https://saref.etsi.org/core#",
+        "geometry": {
+            "@id": "geosparql:hasGeometry",
+            "@type": "@id",
+            "@context": {
+                "address":"sdo:address",
+                "polygon":"sdo:polygon",
+                "postalCode": "sdo:postalCode"    
+            }
+        }
+    }
+}

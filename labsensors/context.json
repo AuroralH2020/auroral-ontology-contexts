@@ -31,8 +31,8 @@
             "@id":"geo:location",
             "@type": "@id",
             "@context": {
-                "lat": "geo:lat",
-                "long": "geo:long"
+                "latitude": "geo:lat",
+                "longitude": "geo:long"
             }
         },
         "device": "core:Device",
@@ -162,6 +162,7 @@
         "partsPerMillion": "om:PartsPerMillion",
         "wattPerSquareMetre": "om:wattPerSquareMetre",
         "metrePerSecond": "om:PrefixedMetrePerSecond-Time",
-        "decibel": "core:Decibel"
+        "decibel": "core:Decibel",
+        "number":"om:Number"
     }
 }
