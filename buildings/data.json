@@ -42,7 +42,7 @@
         },
         {
             "id": "geosparql:upm-buildings:1006202844",
-            "label" : "Building II rest room access to building IV, UPM campus"
+            "label" : "Building II rest room access to building IV, UPM campus",
             "asWKT": "POLYGON ((-3.8398477 40.4057179,-3.8397855 40.4055958,-3.8397063 40.4056192,-3.8396208 40.4056445,-3.839683 40.4057666,-3.8397148 40.4057572,-3.8397744 40.4057396,-3.8398419 40.4057196,-3.8398477 40.4057179))"
         },
         {
