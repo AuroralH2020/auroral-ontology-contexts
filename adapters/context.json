@@ -141,6 +141,7 @@
     "pressure": "https://auroral.iot.linkeddata.es/def/adapters#Pressure",
     "temperatureAmbientProperty": "https://auroral.iot.linkeddata.es/def/adapters#TemperatureAmbientProperty",
     "weather": "https://auroral.iot.linkeddata.es/def/adapters#Weather",
-    "windAmbientProperty": "https://auroral.iot.linkeddata.es/def/adapters#WindAmbientProperty"
+    "windAmbientProperty": "https://auroral.iot.linkeddata.es/def/adapters#WindAmbientProperty",
+    "sensor":"https://auroral.iot.linkeddata.es/def/core#Sensor"
   }
 }
