@@ -142,6 +142,7 @@
     "temperatureAmbientProperty": "https://auroral.iot.linkeddata.es/def/adapters#TemperatureAmbientProperty",
     "weather": "https://auroral.iot.linkeddata.es/def/adapters#Weather",
     "windAmbientProperty": "https://auroral.iot.linkeddata.es/def/adapters#WindAmbientProperty",
-    "sensor":"https://auroral.iot.linkeddata.es/def/core#Sensor"
+    "sensor":"https://auroral.iot.linkeddata.es/def/core#Sensor",
+    "carSensor":"https://auroral.iot.linkeddata.es/def/adapters#carSensor"
   }
 }
