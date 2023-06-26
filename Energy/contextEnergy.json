@@ -3,14 +3,14 @@
     "@version": 1.1,
     "energ": "https://auroral.iot.linkeddata.es/def/energy#",
     "adapters": "https://auroral.iot.linkeddata.es/def/adapters#",
-    "saref": "saref:https://saref.etsi.org/core#",
+    "saref": "https://saref.etsi.org/core#",
     "core": "https://auroral.iot.linkeddata.es/def/core#",
     "om": "http://www.wurvoc.org/vocabularies/om-2/",
     "cur": "http://publications.europa.eu/resource/authority/currency/",
     "time": "https://www.w3.org/2006/time",
     "id": "core:identifier",
     "constructionYear": "core:constructionYear",
-    "heatingArea": "core:heatingArea",
+    "heatingArea": "core:heatingArea", 
     "measurement": {
       "@id": "saref:hasMeasurement",
       "@type": "@id",
@@ -24,41 +24,44 @@
             "source": {
               "@id": "energ:hasSource",
               "@type": "@id"
-            },
+            }, 
             "price": {
               "@id": "saref:hasPrice",
               "@type": "@id",
               "@context": {
                 "agreement": {
                   "@id": "energ:hasAgreement",
-                  "@type": "@id",
+                  "@type": "@id", 
                   "@context": {
                     "contract": "energ:contractType",
                     "cost": {
                       "@id": "energ:hasCostPrice",
-                      "@type": "@id",
+                      "@type": "@id", 
                       "@context": {
-                        "cost:Price": "energ:costPrice",
+                        "cost": "energ:costPrice", 
                         "forSeason": {
                           "@id": "energ:forSeason",
                           "@type": "@id"
-                        },
+                        }, 
                         "currency": {
                           "@id": "energ:inCurrency",
                           "@type": "@id"
-                        },
+                        }, 
                         "Winter": "energ:Winter",
                         "Spring": "energ:Spring",
                         "Summer": "energ:Summer",
                         "Autumn": "energ:Autumn"
                       }
-                    }
-                  },
+                             }
+    
+                          }
+                      }, 
+                
+                
                   "consumer": {
                     "@id": "energ:dependsOnConsumer",
                     "@type": "@vocab"
-                  }
-                },
+                  }, 
                 "Apartment": "energ:Apartment",
                 "HouseWithoutElectricalHeating": "energ:HouseWithoutElectricalHeating",
                 "HouseWithElectricalHeating": "energ:HouseWithElectricalHeating",
@@ -66,8 +69,9 @@
                 "FixedAgreement": "energ:FixedAgreement",
                 "VariableAgreement": "energ:VariableAgreement",
                 "StandardAgreement": "energ:StandardAgreement"
+
               }
-            },
+           }, 
             "consumption": "adapters:EnergyConsumption",
             "use": "adapters:EnergyUseIntensity",
             "fueloil": "energ:FuelOil",
@@ -75,8 +79,10 @@
             "firewood": "energ:Firewood",
             "lignitebriquettte": "energ:LigniteBriquette",
             "electricitygrid": "energ:ElectricityGrid"
-          }
-        },
+       }
+        
+                 }, 
+        
         "unitmeasurement": {
           "@id": "saref:isMeasuredIn",
           "@type": "@id"
@@ -98,13 +104,15 @@
               "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
             }
           }
-        },
+          }, 
         "KilowattHourYear": "core:KilowattHourYear",
         "KilowattHourSquareMeter": "core:KiloWattHourSquareMeter",
         "kilogram": "om:kilogram",
         "cubicMetre": "om:cubicMetre",
         "MegawattHour": "core:MegawattHour"
-      }
+      
     }
+    
   }
+}
 }
