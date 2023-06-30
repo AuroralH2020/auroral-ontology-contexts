@@ -6,6 +6,7 @@
       "tmjourney":"https://w3id.org/transmodel/journeys#",
       "id":"mob:id",
       "name":"mob:name",
+      "stopPoint":"mob:StopPoint",
       "estimatedcall":{
          "@id":"mob:hasEstimatedCall",
          "@type":"@id",
