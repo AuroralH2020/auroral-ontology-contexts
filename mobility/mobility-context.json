@@ -1,88 +1,89 @@
 {
-  "@context": {
-    "@version": 1.1,
-    "mob": "https://auroral.iot.linkeddata.es/def/mobility#",
-    "geon": "http://www.geonames.org/ontology#",
-    "tmjourney": "https://w3id.org/transmodel/journeys#",
-    "id": "mob:id",
-    "name": "mob:name",
-    "estimatedcall": {
-      "@id": "mob:hasEstimatedCall",
-      "@type": "@id",
-      "@context": {
-        "boarding": "mob:forBoarding",
-        "alighting": "mob:forlighting",
-        "date": "mob:date",
-        "quay": {
-          "@id": "mob:hasQuay",
-          "@type": "@id",
-          "@context": {
-            "id": "mob:id"
-          }
-        },
-        "destination": {
-          "@id": "mob:destinationDisplay",
-          "@type": "@id",
-          "@context": {
-            "frontText": "tmjourney:frontText"
-          }
-        },
-        "scheduledtime": {
-          "@id": "mob:hasScheduledTime",
-          "@type": "@id",
-          "@context": {
-            "arrival": {
-              "@id":"mob:ArrivalTime",
-              "@context": {
-                "aimed-arrival": "mob:aimedArrivalTime",
-                "expected-arrival": "mob:expectedArrivalTime",
-                "actual-arrival": "mob:actualArrivalTime"
-              }
+   "@context":{
+      "@version":1.1,
+      "mob":"https://auroral.iot.linkeddata.es/def/mobility#",
+      "geon":"http://www.geonames.org/ontology#",
+      "tmjourney":"https://w3id.org/transmodel/journeys#",
+      "id":"mob:id",
+      "name":"mob:name",
+      "estimatedcall":{
+         "@id":"mob:hasEstimatedCall",
+         "@type":"@id",
+         "@context":{
+            "boarding":"mob:forBoarding",
+            "alighting":"mob:forlighting",
+            "date":"mob:date",
+            "quay":{
+               "@id":"mob:hasQuay",
+               "@type":"@id",
+               "@context":{
+                  "id":"mob:id"
+               }
             },
-            "departure": {
-            "@id":"mob:DepartureTime",
-              "@context": {
-                "aimed-departure": "mob:aimedDepartureTime",
-                "expected-departure": "mob:expectedDepartureTime",
-                "actual-departure": "mob:actualDepartureTime"
-              }
-            }
-          }
-        },
-        "service": {
-          "@id": "mob:journeyService",
-          "@type": "@id",
-          "@context": {
-            "pattern": {
-              "@id": "mob:journeyPattern",
-              "@type": "@id",
-              "@context": {
-                "line": {
-                  "@id": "mob:hasline",
-                  "@type": "@id",
-                  "@context": {
-                    "id": "mob:id",
-                    "name": "mob:name",
-                    "transportmode": {
-                      "@id": "mob:hasTransportMode",
-                      "@type": "@id",
-                      "@context": {
-                        "bus": "tmjourney:Bus",
-                        "car": "tmjourney:CableCar",
-                        "ferry": "tmjourney:Ferry",
-                        "funicular": "tmjourney:Funicular",
-                        "gondola": "tmjourney:Gondola",
-                        "metro": "tmjourney:Metro",
-                        "rail": "tmjourney:Rail",
-                        "tram": "tmjourney:Tram"
-                      }
-                    }
+            "destination":{
+               "@id":"mob:destinationDisplay",
+               "@type":"@id",
+               "@context":{
+                  "frontText":"tmjourney:frontText"
+               }
+            },
+            "scheduledtime":{
+               "@id":"mob:hasScheduledTime",
+               "@type":"@id",
+               "@context":{
+                  "arrival":{
+                     "@id":"mob:ArrivalTime",
+                     "@context":{
+                        "aimed-arrival":"mob:aimedArrivalTime",
+                        "expected-arrival":"mob:expectedArrivalTime",
+                        "actual-arrival":"mob:actualArrivalTime"
+                     }
+                  },
+                  "departure":{
+                     "@id":"mob:DepartureTime",
+                     "@context":{
+                        "aimed-departure":"mob:aimedDepartureTime",
+                        "expected-departure":"mob:expectedDepartureTime",
+                        "actual-departure":"mob:actualDepartureTime"
+                     }
                   }
-                }
-              }
+               }
+            },
+            "service":{
+               "@id":"mob:journeyService",
+               "@type":"@id",
+               "@context":{
+                  "pattern":{
+                     "@id":"mob:journeyPattern",
+                     "@type":"@id",
+                     "@context":{
+                        "line":{
+                           "@id":"mob:hasline",
+                           "@type":"@id",
+                           "@context":{
+                              "id":"mob:id",
+                              "name":"mob:name",
+                              "transportmode":{
+                                 "@id":"mob:hasTransportMode",
+                                 "@type":"@id",
+                                 "@context":{
+                                    "bus":"tmjourney:Bus",
+                                    "car":"tmjourney:CableCar",
+                                    "ferry":"tmjourney:Ferry",
+                                    "funicular":"tmjourney:Funicular",
+                                    "gondola":"tmjourney:Gondola",
+                                    "metro":"tmjourney:Metro",
+                                    "rail":"tmjourney:Rail",
+                                    "tram":"tmjourney:Tram"
+                                 }
+                              }
+                           }
+                        }
+                     }
+                  }
+               }
             }
-          }
-        }
+         }
       }
-    }
-  }
+   }
+}
