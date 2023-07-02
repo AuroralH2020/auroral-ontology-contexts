@@ -1,0 +1,133 @@
+{
+  "@context": {
+    "ship": "https://auroral.iot.linkeddata.es/def/shipment#",
+    "core": "https://auroral.iot.linkeddata.es/def/core#",
+    "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+    "biom": "https://auroral.iot.linkeddata.es/def/biomass#",
+    "identifier": {
+      "@id": "ship:uuidProduct",
+      "@type": "xsd:string"
+    },
+    "inShipment": {
+      "@id": "ship:inShipment",
+      "@type": "@id",
+      "@context": {
+        "identifier": {
+          "@id": "ship:uuidShip",
+          "@type": "xsd:string"
+        },
+        "createdTime": {
+          "@id": "ship:createdTime",
+          "@type": "xsd:dateTime"
+        },
+        "personCount": {
+          "@id": "ship:personCount",
+          "@type": "xsd:integer"
+        },
+        "orderInfo": {
+          "@id": "ship:orderInfo",
+          "@type": "xsd:string"
+        },
+        "orderDescription": {
+          "@id": "ship:orderDescription",
+          "@type": "xsd:string"
+        },
+        "height": {
+          "@id": "ship:height",
+          "@type": "xsd:integer"
+        },
+        "weight": {
+          "@id": "ship:weight",
+          "@type": "xsd:string"
+        },
+        "width": {
+          "@id": "ship:width",
+          "@type": "xsd:string"
+        },
+        "lenght": {
+          "@id": "ship:lenght",
+          "@type": "xsd:string"
+        },
+        "stretch": {
+          "@id": "ship:stretch",
+          "@type": "xsd:integer"
+        },
+        "address": {
+          "@id": "ship:address",
+          "@type": "@id",
+          "@context": {
+            "pickupAddress": "ship:pickupAddress",
+            "deliveryAddress": "ship:deliveryAddress",
+            "address": {
+              "@id": "ship:address",
+              "@type": "xsd:string"
+            },
+            "apartement": {
+              "@id": "ship:apartement",
+              "@type": "xsd:string"
+            },
+            "postal": {
+              "@id": "ship:postal",
+              "@type": "xsd:string"
+            },
+            "city": {
+              "@id": "ship:city",
+              "@type": "xsd:string"
+            }
+          }
+        },
+        "price": {
+          "@id": "ship:price",
+          "@type": "@id",
+          "@context": {
+            "amount": "ship:amount",
+            "inCurrency": {
+              "@id": "ship:inCurrency",
+              "@type": "@id"
+            }
+          }
+        },
+        "time": {
+          "@id": "ship:time",
+          "@type": "@id",
+          "@context": {
+            "dateStart": "ship:dateStart",
+            "dateStop": "ship:dateStop",
+            "PickupTime": "ship:PickupTime",
+            "DeliveryTime": "ship:DeliveryTime"
+          }
+        },
+        "document": {
+          "@id": "ship:hasDocument",
+          "@type": "@id",
+          "@context": {
+            "identifier": "ship:uuidDocument",
+            "mimeType": "ship:mimeType",
+            "remoteAddress": "ship:remoteAddress"
+          }
+        },
+        "shipmentupdate": {
+          "@id": "ship:hasUpdate",
+          "@type": "@id",
+          "@context": {
+            "identifier": "ship:uuidShipUpdate",
+            "timeUpdate": "ship:timeUpdate",
+            "hasType": "ship:hasType",
+            "transport": {
+              "@id": "ship:inTransportation",
+              "@type": "@id",
+              "@context": {
+                "identifier": "ship:uuidTransportation",
+                "name": "ship:name",
+                "model": "ship:model",
+                "tarekg": "ship:tarekg",
+                "licencePlate": "ship:licencePlate",
+                "year": "ship:year"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
