@@ -1,0 +1,280 @@
+{
+    "data": {
+        "stopPlace": {
+            "id": "NSR:StopPlace:548",
+            "name": "Bergen stasjon",
+            "estimatedCalls": [
+                {
+                    "realtime": true,
+                    "aimedArrivalTime": "2023-06-30T10:30:00+02:00",
+                    "aimedDepartureTime": "2023-06-30T10:30:00+02:00",
+                    "expectedArrivalTime": "2023-06-30T10:30:58+02:00",
+                    "expectedDepartureTime": "2023-06-30T10:30:58+02:00",
+                    "actualArrivalTime": null,
+                    "actualDepartureTime": null,
+                    "date": "2023-06-30",
+                    "forBoarding": true,
+                    "forAlighting": false,
+                    "destinationDisplay": {
+                        "frontText": "Arna"
+                    },
+                    "quay": {
+                        "id": "NSR:Quay:900"
+                    },
+                    "serviceJourney": {
+                        "journeyPattern": {
+                            "line": {
+                                "id": "VYG:Line:43",
+                                "name": "Bergen-Arna",
+                                "transportMode": "rail"
+                            }
+                        }
+                    }
+                },
+                {
+                    "realtime": true,
+                    "aimedArrivalTime": "2023-06-30T10:35:00+02:00",
+                    "aimedDepartureTime": "2023-06-30T10:35:00+02:00",
+                    "expectedArrivalTime": "2023-06-30T10:35:00+02:00",
+                    "expectedDepartureTime": "2023-06-30T10:35:00+02:00",
+                    "actualArrivalTime": null,
+                    "actualDepartureTime": null,
+                    "date": "2023-06-30",
+                    "forBoarding": true,
+                    "forAlighting": false,
+                    "destinationDisplay": {
+                        "frontText": "Myrdal"
+                    },
+                    "quay": {
+                        "id": "NSR:Quay:899"
+                    },
+                    "serviceJourney": {
+                        "journeyPattern": {
+                            "line": {
+                                "id": "VYG:Line:45",
+                                "name": "Bergen-Voss-Myrdal-Ål",
+                                "transportMode": "rail"
+                            }
+                        }
+                    }
+                },
+                {
+                    "realtime": true,
+                    "aimedArrivalTime": "2023-06-30T11:00:00+02:00",
+                    "aimedDepartureTime": "2023-06-30T11:00:00+02:00",
+                    "expectedArrivalTime": "2023-06-30T11:00:00+02:00",
+                    "expectedDepartureTime": "2023-06-30T11:00:00+02:00",
+                    "actualArrivalTime": null,
+                    "actualDepartureTime": null,
+                    "date": "2023-06-30",
+                    "forBoarding": true,
+                    "forAlighting": false,
+                    "destinationDisplay": {
+                        "frontText": "Arna"
+                    },
+                    "quay": {
+                        "id": "NSR:Quay:900"
+                    },
+                    "serviceJourney": {
+                        "journeyPattern": {
+                            "line": {
+                                "id": "VYG:Line:43",
+                                "name": "Bergen-Arna",
+                                "transportMode": "rail"
+                            }
+                        }
+                    }
+                },
+                {
+                    "realtime": true,
+                    "aimedArrivalTime": "2023-06-30T11:30:00+02:00",
+                    "aimedDepartureTime": "2023-06-30T11:30:00+02:00",
+                    "expectedArrivalTime": "2023-06-30T11:30:00+02:00",
+                    "expectedDepartureTime": "2023-06-30T11:30:00+02:00",
+                    "actualArrivalTime": null,
+                    "actualDepartureTime": null,
+                    "date": "2023-06-30",
+                    "forBoarding": true,
+                    "forAlighting": false,
+                    "destinationDisplay": {
+                        "frontText": "Arna"
+                    },
+                    "quay": {
+                        "id": "NSR:Quay:900"
+                    },
+                    "serviceJourney": {
+                        "journeyPattern": {
+                            "line": {
+                                "id": "VYG:Line:43",
+                                "name": "Bergen-Arna",
+                                "transportMode": "rail"
+                            }
+                        }
+                    }
+                },
+                {
+                    "realtime": true,
+                    "aimedArrivalTime": "2023-06-30T11:43:00+02:00",
+                    "aimedDepartureTime": "2023-06-30T11:43:00+02:00",
+                    "expectedArrivalTime": "2023-06-30T11:43:00+02:00",
+                    "expectedDepartureTime": "2023-06-30T11:43:00+02:00",
+                    "actualArrivalTime": null,
+                    "actualDepartureTime": null,
+                    "date": "2023-06-30",
+                    "forBoarding": true,
+                    "forAlighting": false,
+                    "destinationDisplay": {
+                        "frontText": "Oslo S"
+                    },
+                    "quay": {
+                        "id": "NSR:Quay:905"
+                    },
+                    "serviceJourney": {
+                        "journeyPattern": {
+                            "line": {
+                                "id": "VYG:Line:41",
+                                "name": "Oslo S-Bergen",
+                                "transportMode": "rail"
+                            }
+                        }
+                    }
+                },
+                {
+                    "realtime": true,
+                    "aimedArrivalTime": "2023-06-30T12:04:00+02:00",
+                    "aimedDepartureTime": "2023-06-30T12:04:00+02:00",
+                    "expectedArrivalTime": "2023-06-30T12:04:00+02:00",
+                    "expectedDepartureTime": "2023-06-30T12:04:00+02:00",
+                    "actualArrivalTime": null,
+                    "actualDepartureTime": null,
+                    "date": "2023-06-30",
+                    "forBoarding": true,
+                    "forAlighting": false,
+                    "destinationDisplay": {
+                        "frontText": "Arna"
+                    },
+                    "quay": {
+                        "id": "NSR:Quay:900"
+                    },
+                    "serviceJourney": {
+                        "journeyPattern": {
+                            "line": {
+                                "id": "VYG:Line:43",
+                                "name": "Bergen-Arna",
+                                "transportMode": "rail"
+                            }
+                        }
+                    }
+                },
+                {
+                    "realtime": true,
+                    "aimedArrivalTime": "2023-06-30T12:29:00+02:00",
+                    "aimedDepartureTime": "2023-06-30T12:29:00+02:00",
+                    "expectedArrivalTime": "2023-06-30T12:29:00+02:00",
+                    "expectedDepartureTime": "2023-06-30T12:29:00+02:00",
+                    "actualArrivalTime": null,
+                    "actualDepartureTime": null,
+                    "date": "2023-06-30",
+                    "forBoarding": true,
+                    "forAlighting": false,
+                    "destinationDisplay": {
+                        "frontText": "Myrdal"
+                    },
+                    "quay": {
+                        "id": "NSR:Quay:899"
+                    },
+                    "serviceJourney": {
+                        "journeyPattern": {
+                            "line": {
+                                "id": "VYG:Line:45",
+                                "name": "Bergen-Voss-Myrdal-Ål",
+                                "transportMode": "rail"
+                            }
+                        }
+                    }
+                },
+                {
+                    "realtime": true,
+                    "aimedArrivalTime": "2023-06-30T13:13:00+02:00",
+                    "aimedDepartureTime": "2023-06-30T13:13:00+02:00",
+                    "expectedArrivalTime": "2023-06-30T13:13:00+02:00",
+                    "expectedDepartureTime": "2023-06-30T13:13:00+02:00",
+                    "actualArrivalTime": null,
+                    "actualDepartureTime": null,
+                    "date": "2023-06-30",
+                    "forBoarding": true,
+                    "forAlighting": false,
+                    "destinationDisplay": {
+                        "frontText": "Arna"
+                    },
+                    "quay": {
+                        "id": "NSR:Quay:901"
+                    },
+                    "serviceJourney": {
+                        "journeyPattern": {
+                            "line": {
+                                "id": "VYG:Line:43",
+                                "name": "Bergen-Arna",
+                                "transportMode": "rail"
+                            }
+                        }
+                    }
+                },
+                {
+                    "realtime": true,
+                    "aimedArrivalTime": "2023-06-30T13:20:00+02:00",
+                    "aimedDepartureTime": "2023-06-30T13:20:00+02:00",
+                    "expectedArrivalTime": "2023-06-30T13:20:00+02:00",
+                    "expectedDepartureTime": "2023-06-30T13:20:00+02:00",
+                    "actualArrivalTime": null,
+                    "actualDepartureTime": null,
+                    "date": "2023-06-30",
+                    "forBoarding": true,
+                    "forAlighting": false,
+                    "destinationDisplay": {
+                        "frontText": "Myrdal"
+                    },
+                    "quay": {
+                        "id": "NSR:Quay:900"
+                    },
+                    "serviceJourney": {
+                        "journeyPattern": {
+                            "line": {
+                                "id": "VYG:Line:45",
+                                "name": "Bergen-Voss-Myrdal-Ål",
+                                "transportMode": "rail"
+                            }
+                        }
+                    }
+                },
+                {
+                    "realtime": true,
+                    "aimedArrivalTime": "2023-06-30T13:42:00+02:00",
+                    "aimedDepartureTime": "2023-06-30T13:42:00+02:00",
+                    "expectedArrivalTime": "2023-06-30T13:42:00+02:00",
+                    "expectedDepartureTime": "2023-06-30T13:42:00+02:00",
+                    "actualArrivalTime": null,
+                    "actualDepartureTime": null,
+                    "date": "2023-06-30",
+                    "forBoarding": true,
+                    "forAlighting": false,
+                    "destinationDisplay": {
+                        "frontText": "Arna"
+                    },
+                    "quay": {
+                        "id": "NSR:Quay:901"
+                    },
+                    "serviceJourney": {
+                        "journeyPattern": {
+                            "line": {
+                                "id": "VYG:Line:43",
+                                "name": "Bergen-Arna",
+                                "transportMode": "rail"
+                            }
+                        }
+                    }
+                }
+            ]
+        }
+    }
+}

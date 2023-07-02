@@ -1,146 +1,161 @@
 {
-  "@context": {
-    "id": {
-      "@id": "https://auroral.iot.linkeddata.es/def/core#hasID",
-      "@type": "http://www.w3.org/2001/XMLSchema#string"
-    },
-    "measurement": {
-      "@id": "https://saref.etsi.org/core/makesMeasurement",
-      "@type": "@id",
-      "@context": {
-        "timestamp": {
-          "@id": "https://saref.etsi.org/core/hasTimestamp",
-          "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
-        },
-        "value": {
-          "@id": "https://saref.etsi.org/core/hasValue",
-          "@type": "http://www.w3.org/2001/XMLSchema#string"
-        },
-        "type": {
-          "@id": "https://www.w3.org/2022/wot/td/v1.1#hasValueType",
-          "@type": "@vocab"
-        },
-        "object": "https://www.w3.org/2019/wot/json-schema#ObjectSchema",
-        "array": "https://www.w3.org/2019/wot/json-schema#ArraySchema",
-        "boolean": "https://www.w3.org/2019/wot/json-schema#BooleanSchema",
-        "string": "https://www.w3.org/2019/wot/json-schema#StringSchema",
-        "number": "https://www.w3.org/2019/wot/json-schema#NumberSchema",
-        "integer": "https://www.w3.org/2019/wot/json-schema#IntegerSchema",
-        "null": "https://www.w3.org/2019/wot/json-schema#NullSchema",
-        "property": {
-          "@id": "https://saref.etsi.org/core/aboutProperty",
-          "@type": "@vocab"
-        },
-        "lightcolor": "https://auroral.iot.linkeddata.es/def/adapters#LightColor",
-        "illuminance": "https://auroral.iot.linkeddata.es/def/adapters#Illuminance",
-        "batteryLevel": "https://auroral.iot.linkeddata.es/def/adapters#BatteryLevel",
-        "ambientTemperature": "https://auroral.iot.linkeddata.es/def/adapters#AmbientTemperature",
-        "relativeHumidity": "https://auroral.iot.linkeddata.es/def/adapters#RelativeHumidity",
-        "totalEnergy": "https://auroral.iot.linkeddata.es/def/adapters#TotalEnergy",
-        "electricCurrent": "https://auroral.iot.linkeddata.es/def/adapters#ElectricCurrent",
-        "energyConsumption": "https://auroral.iot.linkeddata.es/def/adapters#EnergyConsumption",
-        "powerFactor": "https://auroral.iot.linkeddata.es/def/adapters#PowerFactor",
-        "energyProduction": "https://auroral.iot.linkeddata.es/def/adapters#EnergyProduction",
-        "electricVoltage" : "https://auroral.iot.linkeddata.es/def/adapters#ElectricVoltage",
-        "isMeasuredIn": {
-          "@id": "https://saref.etsi.org/core/isMeasuredIn",
-          "@type": "@vocab"
-        },
-        "degreeCelsius" : "http://www.ontology-of-units-of-measure.org/resource/om-2/degreeCelsius",
-        "degreeFahrenheit" : "http://www.ontology-of-units-of-measure.org/resource/om-2/degreeFahrenheit",
-        "watt" : "http://www.ontology-of-units-of-measure.org/resource/om-2/watt",
-        "kilowattHour" : "http://www.ontology-of-units-of-measure.org/resource/om-2/kilowattHour",
-        "volt" : "http://www.ontology-of-units-of-measure.org/resource/om-2/volt",
-        "ampere" : "http://www.ontology-of-units-of-measure.org/resource/om-2/ampere",
-        "lux" : "http://www.ontology-of-units-of-measure.org/resource/om-2/lux",
-        "degree" : "http://www.ontology-of-units-of-measure.org/resource/om-2/degree",
-        "cubicMetre" : "http://www.ontology-of-units-of-measure.org/resource/om-2/cubicMetre",
-        "partsPerMillion" : "http://www.ontology-of-units-of-measure.org/resource/om-2/partsPerMillion",
-        "kilowatt" : "http://www.ontology-of-units-of-measure.org/resource/om-2/kilowatt",
-        "wattPerSquareMetre" : "http://www.ontology-of-units-of-measure.org/resource/om-2/wattPerSquareMetre",
-        "hectopascal" : "http://www.ontology-of-units-of-measure.org/resource/om-2/hectopascal",
-        "millimetre" : "http://www.ontology-of-units-of-measure.org/resource/om-2/millimetre",
-        "centimetre" : "http://www.ontology-of-units-of-measure.org/resource/om-2/centimetre",
-        "kilogram" : "http://www.ontology-of-units-of-measure.org/resource/om-2/kilogram",
-        "kelvin" : "http://www.ontology-of-units-of-measure.org/resource/om-2/kelvin",
-        "litre" : "http://www.ontology-of-units-of-measure.org/resource/om-2/litre",
-        "unitHour": {
-          "@id": "https://auroral.iot.linkeddata.es/def/core#hasTemporalUnit",
-           "@type": "@id",
-            "@context": {
-              "minutes": {
-                "@id": "https://www.w3.org/2006/time#minutes",
-                "@type": "http://www.w3.org/2001/XMLSchema#decimal"
-               },
-              "hours": {
-                "@id": "https://www.w3.org/2006/time#hours",
-                "@type": "http://www.w3.org/2001/XMLSchema#decimal"
-               }
+    "@context": {
+      "id": {
+        "@id": "https://auroral.iot.linkeddata.es/def/core#hasID",
+        "@type": "http://www.w3.org/2001/XMLSchema#string"
+      },
+      "measurement": {
+        "@id": "https://saref.etsi.org/core/makesMeasurement",
+        "@type": "@id",
+        "@context": {
+          "timestamp": {
+            "@id": "https://saref.etsi.org/core/hasTimestamp",
+            "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+          },
+          "value": {
+            "@id": "https://saref.etsi.org/core/hasValue",
+            "@type": "http://www.w3.org/2001/XMLSchema#string"
+          },
+          "type": {
+            "@id": "https://www.w3.org/2022/wot/td/v1.1#hasValueType",
+            "@type": "@vocab"
+          },
+          "object": "https://www.w3.org/2019/wot/json-schema#ObjectSchema",
+          "array": "https://www.w3.org/2019/wot/json-schema#ArraySchema",
+          "boolean": "https://www.w3.org/2019/wot/json-schema#BooleanSchema",
+          "string": "https://www.w3.org/2019/wot/json-schema#StringSchema",
+          "number": "https://www.w3.org/2019/wot/json-schema#NumberSchema",
+          "integer": "https://www.w3.org/2019/wot/json-schema#IntegerSchema",
+          "null": "https://www.w3.org/2019/wot/json-schema#NullSchema",
+          "property": {
+            "@id": "https://saref.etsi.org/core/aboutProperty",
+            "@type": "@vocab"
+          },
+          "lightcolor": "https://auroral.iot.linkeddata.es/def/adapters#LightColor",
+          "illuminance": "https://auroral.iot.linkeddata.es/def/adapters#Illuminance",
+          "batteryLevel": "https://auroral.iot.linkeddata.es/def/adapters#BatteryLevel",
+          "ambientTemperature": "https://auroral.iot.linkeddata.es/def/adapters#AmbientTemperature",
+          "relativeHumidity": "https://auroral.iot.linkeddata.es/def/adapters#RelativeHumidity",
+          "totalEnergy": "https://auroral.iot.linkeddata.es/def/adapters#TotalEnergy",
+          "electricCurrent": "https://auroral.iot.linkeddata.es/def/adapters#ElectricCurrent",
+          "energyConsumption": "https://auroral.iot.linkeddata.es/def/adapters#EnergyConsumption",
+          "powerFactor": "https://auroral.iot.linkeddata.es/def/adapters#PowerFactor",
+          "energyProduction": "https://auroral.iot.linkeddata.es/def/adapters#EnergyProduction",
+          "electricVoltage" : "https://auroral.iot.linkeddata.es/def/adapters#ElectricVoltage",
+          "isMeasuredIn": {
+            "@id": "https://saref.etsi.org/core/isMeasuredIn",
+            "@type": "@vocab"
+          },
+          "degreeCelsius" : "http://www.ontology-of-units-of-measure.org/resource/om-2/degreeCelsius",
+          "degreeFahrenheit" : "http://www.ontology-of-units-of-measure.org/resource/om-2/degreeFahrenheit",
+          "watt" : "http://www.ontology-of-units-of-measure.org/resource/om-2/watt",
+          "kilowattHour" : "http://www.ontology-of-units-of-measure.org/resource/om-2/kilowattHour",
+          "volt" : "http://www.ontology-of-units-of-measure.org/resource/om-2/volt",
+          "ampere" : "http://www.ontology-of-units-of-measure.org/resource/om-2/ampere",
+          "lux" : "http://www.ontology-of-units-of-measure.org/resource/om-2/lux",
+          "degree" : "http://www.ontology-of-units-of-measure.org/resource/om-2/degree",
+          "cubicMetre" : "http://www.ontology-of-units-of-measure.org/resource/om-2/cubicMetre",
+          "partsPerMillion" : "http://www.ontology-of-units-of-measure.org/resource/om-2/partsPerMillion",
+          "kilowatt" : "http://www.ontology-of-units-of-measure.org/resource/om-2/kilowatt",
+          "wattPerSquareMetre" : "http://www.ontology-of-units-of-measure.org/resource/om-2/wattPerSquareMetre",
+          "hectopascal" : "http://www.ontology-of-units-of-measure.org/resource/om-2/hectopascal",
+          "millimetre" : "http://www.ontology-of-units-of-measure.org/resource/om-2/millimetre",
+          "centimetre" : "http://www.ontology-of-units-of-measure.org/resource/om-2/centimetre",
+          "kilogram" : "http://www.ontology-of-units-of-measure.org/resource/om-2/kilogram",
+          "kelvin" : "http://www.ontology-of-units-of-measure.org/resource/om-2/kelvin",
+          "litre" : "http://www.ontology-of-units-of-measure.org/resource/om-2/litre",
+          "unitHour": {
+            "@id": "https://auroral.iot.linkeddata.es/def/core#hasTemporalUnit",
+             "@type": "@id",
+              "@context": {
+                "minutes": {
+                  "@id": "https://www.w3.org/2006/time#minutes",
+                  "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+                 },
+                "hours": {
+                  "@id": "https://www.w3.org/2006/time#hours",
+                  "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+                 }
+              }
+          }, 
+          "readability":{
+            "@id": "https://auroral.iot.linkeddata.es/def/core#hasReadability",
+            "@type":"@id", 
+            "@context":{
+                "value": {
+                    "@id": "https://auroral.iot.linkeddata.es/def/core#value",
+                    "@type": "http://www.w3.org/2001/XMLSchema#integer"
+                  }
+
             }
+
         }
-      }
-    },
-    "status": {
-      "@id": "https://auroral.iot.linkeddata.es/def/adapters#StatusProperty",
-      "@type": "@vocab"
-    },
-    "saref-property": {
-      "@id": "https://saref.etsi.org/core#Property",
-      "@type": "@vocab"
-    },
-    "core-sensor": {
-      "@id": "https://auroral.iot.linkeddata.es/def/core#Sensor",
-      "@type": "@vocab"
-    },
-    "ambient-property": {
-      "@id": "https://auroral.iot.linkeddata.es/def/adapters#AmbientProperty",
-      "@type": "@vocab"
-    },
-    "actReason": "https://auroral.iot.linkeddata.es/def/adapters#ActReason",
-    "alert": "https://auroral.iot.linkeddata.es/def/core#Alert",
-    "error": "https://auroral.iot.linkeddata.es/def/core#Error",
-    "presence": "https://auroral.iot.linkeddata.es/def/core#Presence",
-    "storageCapacity": "https://auroral.iot.linkeddata.es/def/core#StorageCapacity",
-    "switchStatus": "https://auroral.iot.linkeddata.es/def/core#SwitchStatus",
-    "accumulatedPrecipitation": "https://auroral.iot.linkeddata.es/def/adapters#AccumulatedPercipitation",
-    "ambientProperty": "https://auroral.iot.linkeddata.es/def/adapters#AmbientProperty",
-    "energyProperty": "https://auroral.iot.linkeddata.es/def/adapters#EnergyProperty",
-    "healthProperty": "https://auroral.iot.linkeddata.es/def/adapters#HealthProperty",
-    "lightProperty": "https://auroral.iot.linkeddata.es/def/adapters#LightProperty",
-    "motionProperty": "https://auroral.iot.linkeddata.es/def/adapters#MotionProperty",
-    "soilMoisture": "https://auroral.iot.linkeddata.es/def/adapters#SoilMoisture",
-    "sound": "https://auroral.iot.linkeddata.es/def/adapters#Sound",
-    "spaceProperty": "https://auroral.iot.linkeddata.es/def/adapters#SpaceProperty",
-    "statusProperty": "https://auroral.iot.linkeddata.es/def/adapters#StatusProperty",
-    "RAFXProperty": "https://auroral.iot.linkeddata.es/def/adapters#TRAFXProperty",
-    "airQualitySensor": "https://auroral.iot.linkeddata.es/def/adapters#AirQualitySensor",
-    "energyMonitor": "https://auroral.iot.linkeddata.es/def/adapters#EnergyMonitor",
-    "floodSensor": "https://auroral.iot.linkeddata.es/def/adapters#FloodSensor",
-    "gpsEmergencyButton": "https://auroral.iot.linkeddata.es/def/adapters#GPSEmergencyButton",
-    "humiditySensor": "https://auroral.iot.linkeddata.es/def/adapters#HumiditySensor",
-    "lightBulb": "https://auroral.iot.linkeddata.es/def/adapters#LightBulb",
-    "monitoringSensor": "https://auroral.iot.linkeddata.es/def/adapters#MonitoringSensor",
-    "motionSensor": "https://auroral.iot.linkeddata.es/def/adapters#MotionSensor",
-    "pv": "https://auroral.iot.linkeddata.es/def/adapters#PV",
-    "personCounterSensor": "https://auroral.iot.linkeddata.es/def/adapters#PersonCounterSensor",
-    "presenceSensor": "https://auroral.iot.linkeddata.es/def/adapters#Presence_Sensor",
-    "qrGeneratorSensor": "https://auroral.iot.linkeddata.es/def/adapters#QRGeneratorSensor",
-    "smartPlug": "https://auroral.iot.linkeddata.es/def/adapters#SmartPlug",
-    "soilMoistureSensor": "https://auroral.iot.linkeddata.es/def/adapters#SoilMoistureSEnsor",
-    "thermometer": "https://auroral.iot.linkeddata.es/def/adapters#Thermometer",
-    "wasteBinSensor": "https://auroral.iot.linkeddata.es/def/adapters#WasteBinSensor",
-    "waterAMRSensor": "https://auroral.iot.linkeddata.es/def/adapters#WaterAMRSensor",
-    "weatherSensor": "https://auroral.iot.linkeddata.es/def/adapters#WeatherSensor",
-    "batterySensor": "https://auroral.iot.linkeddata.es/def/core#BatterySensor",
-    "airQuality": "https://auroral.iot.linkeddata.es/def/adapters#AirQuality",
-    "ambient-solar-radiation": "https://auroral.iot.linkeddata.es/def/adapters#AmbientSolarRadiation",
-    "floodAmbientProperty": "https://auroral.iot.linkeddata.es/def/adapters#FloodAmbientProperty",
-    "humidityAmbientProperty": "https://auroral.iot.linkeddata.es/def/adapters#HumidityAmbientProperty",
-    "noise": "https://auroral.iot.linkeddata.es/def/adapters#Noise",
-    "percipitation": "https://auroral.iot.linkeddata.es/def/adapters#Percipitation",
-    "pressure": "https://auroral.iot.linkeddata.es/def/adapters#Pressure",
-    "temperatureAmbientProperty": "https://auroral.iot.linkeddata.es/def/adapters#TemperatureAmbientProperty",
-    "weather": "https://auroral.iot.linkeddata.es/def/adapters#Weather",
-    "windAmbientProperty": "https://auroral.iot.linkeddata.es/def/adapters#WindAmbientProperty"
-  }
+        }      
+      },
+      "status": {
+        "@id": "https://auroral.iot.linkeddata.es/def/adapters#StatusProperty",
+        "@type": "@vocab"
+      },
+      "saref-property": {
+        "@id": "https://saref.etsi.org/core#Property",
+        "@type": "@vocab"
+      },
+      "core-sensor": {
+        "@id": "https://auroral.iot.linkeddata.es/def/core#Sensor",
+        "@type": "@vocab"
+      },
+      "ambient-property": {
+        "@id": "https://auroral.iot.linkeddata.es/def/adapters#AmbientProperty",
+        "@type": "@vocab"
+      },
+      "actReason": "https://auroral.iot.linkeddata.es/def/adapters#ActReason",
+      "alert": "https://auroral.iot.linkeddata.es/def/core#Alert",
+      "error": "https://auroral.iot.linkeddata.es/def/core#Error",
+      "presence": "https://auroral.iot.linkeddata.es/def/core#Presence",
+      "storageCapacity": "https://auroral.iot.linkeddata.es/def/core#StorageCapacity",
+      "switchStatus": "https://auroral.iot.linkeddata.es/def/core#SwitchStatus",
+      "accumulatedPrecipitation": "https://auroral.iot.linkeddata.es/def/adapters#AccumulatedPercipitation",
+      "ambientProperty": "https://auroral.iot.linkeddata.es/def/adapters#AmbientProperty",
+      "energyProperty": "https://auroral.iot.linkeddata.es/def/adapters#EnergyProperty",
+      "healthProperty": "https://auroral.iot.linkeddata.es/def/adapters#HealthProperty",
+      "lightProperty": "https://auroral.iot.linkeddata.es/def/adapters#LightProperty",
+      "motionProperty": "https://auroral.iot.linkeddata.es/def/adapters#MotionProperty",
+      "soilMoisture": "https://auroral.iot.linkeddata.es/def/adapters#SoilMoisture",
+      "sound": "https://auroral.iot.linkeddata.es/def/adapters#Sound",
+      "spaceProperty": "https://auroral.iot.linkeddata.es/def/adapters#SpaceProperty",
+      "statusProperty": "https://auroral.iot.linkeddata.es/def/adapters#StatusProperty",
+      "RAFXProperty": "https://auroral.iot.linkeddata.es/def/adapters#TRAFXProperty",
+      "airQualitySensor": "https://auroral.iot.linkeddata.es/def/adapters#AirQualitySensor",
+      "energyMonitor": "https://auroral.iot.linkeddata.es/def/adapters#EnergyMonitor",
+      "floodSensor": "https://auroral.iot.linkeddata.es/def/adapters#FloodSensor",
+      "gpsEmergencyButton": "https://auroral.iot.linkeddata.es/def/adapters#GPSEmergencyButton",
+      "humiditySensor": "https://auroral.iot.linkeddata.es/def/adapters#HumiditySensor",
+      "lightBulb": "https://auroral.iot.linkeddata.es/def/adapters#LightBulb",
+      "monitoringSensor": "https://auroral.iot.linkeddata.es/def/adapters#MonitoringSensor",
+      "motionSensor": "https://auroral.iot.linkeddata.es/def/adapters#MotionSensor",
+      "pv": "https://auroral.iot.linkeddata.es/def/adapters#PV",
+      "personCounterSensor": "https://auroral.iot.linkeddata.es/def/adapters#PersonCounterSensor",
+      "presenceSensor": "https://auroral.iot.linkeddata.es/def/adapters#Presence_Sensor",
+      "qrGeneratorSensor": "https://auroral.iot.linkeddata.es/def/adapters#QRGeneratorSensor",
+      "smartPlug": "https://auroral.iot.linkeddata.es/def/adapters#SmartPlug",
+      "soilMoistureSensor": "https://auroral.iot.linkeddata.es/def/adapters#SoilMoistureSEnsor",
+      "thermometer": "https://auroral.iot.linkeddata.es/def/adapters#Thermometer",
+      "wasteBinSensor": "https://auroral.iot.linkeddata.es/def/adapters#WasteBinSensor",
+      "waterAMRSensor": "https://auroral.iot.linkeddata.es/def/adapters#WaterAMRSensor",
+      "weatherSensor": "https://auroral.iot.linkeddata.es/def/adapters#WeatherSensor",
+      "batterySensor": "https://auroral.iot.linkeddata.es/def/core#BatterySensor",
+      "airQuality": "https://auroral.iot.linkeddata.es/def/adapters#AirQuality",
+      "ambient-solar-radiation": "https://auroral.iot.linkeddata.es/def/adapters#AmbientSolarRadiation",
+      "floodAmbientProperty": "https://auroral.iot.linkeddata.es/def/adapters#FloodAmbientProperty",
+      "humidityAmbientProperty": "https://auroral.iot.linkeddata.es/def/adapters#HumidityAmbientProperty",
+      "noise": "https://auroral.iot.linkeddata.es/def/adapters#Noise",
+      "percipitation": "https://auroral.iot.linkeddata.es/def/adapters#Percipitation",
+      "pressure": "https://auroral.iot.linkeddata.es/def/adapters#Pressure",
+      "temperatureAmbientProperty": "https://auroral.iot.linkeddata.es/def/adapters#TemperatureAmbientProperty",
+      "weather": "https://auroral.iot.linkeddata.es/def/adapters#Weather",
+      "windAmbientProperty": "https://auroral.iot.linkeddata.es/def/adapters#WindAmbientProperty",
+      "sensor":"https://auroral.iot.linkeddata.es/def/core#Sensor",
+      "carSensor":"https://auroral.iot.linkeddata.es/def/adaptersCarSensor"
+    }
 }
+  
