@@ -1,0 +1,159 @@
+{
+   "@context":{
+      "ship":"https://auroral.iot.linkeddata.es/def/shipment#",
+      "core":"https://auroral.iot.linkeddata.es/def/core#",
+      "dc":"http://purl.org/dc/terms",
+      "geo":"http://www.w3.org/2003/01/geo/wgs84_pos",
+      "xsd":"http://www.w3.org/2001/XMLSchema#",
+      "name": {
+        "@id":"core:hasName",
+        "@type":"xsd:string"
+      },
+      "hasId": {
+        "@id":"core:hasName",
+        "@type":"xsd:string"
+      },
+      "firstName": {
+        "@id":"core:hasName",
+        "@type":"xsd:string"
+      },
+      "lastName": {
+        "@id":"core:hasName",
+        "@type":"xsd:string"
+      },
+      "email": {
+        "@id":"core:hasName",
+        "@type":"xsd:string"
+      },
+      "location": {
+        "@id":"core:hasName",
+        "@type":"xsd:string"
+      },
+      "occupation": {
+        "@id":"core:hasName",
+        "@type":"xsd:string"
+      },
+      "status": {
+        "@id":"core:hasName",
+        "@type":"xsd:string"
+      },
+      "creationDate": {
+        "@id":"core:hasName",
+        "@type":"xsd:datetime"
+      },
+      "numberActiveProducer":{
+        "@id":"ship:numberActiveProducer",
+        "@type":"xsd:integer"
+      }
+      "userProvides":{
+        "@id":"ship:provides",
+        "@type":"@id",
+        "@context":{
+          "uuidProduct":{
+            "@id":"ship:uuidProduct",
+            "@type":"ship:string"
+          },
+          "currentAmount":{
+            "@id":"ship:currentAmount",
+            "@type":"xsd:string"
+          },
+          "totalAmount":{
+            "@id":"ship:totalAmount",
+            "@type":"xsd:double"
+          },
+          "productShipment": {
+            "@id": "ship:inShipment",
+            "@type": "@id",
+            "@context": {
+              "uuidShip": {
+                "@id":"ship:uuidShip",
+                "@type":"xsd:string"
+              },
+              "createdTime": {
+                "@id":"ship:createdTime",
+                "@type":"xsd:dateTime"
+              },
+              "personCount": {
+                "@id":"ship:personCount",
+                "@type":"xsd:Integer"
+              },
+              "orderInfo": {
+                "@id":"ship:orderInfo",
+                "@type":"xsd:string"
+              },
+              "ordenDescription": {
+                "@id":"ship:ordenDescription",
+                "@type":"xsd:string"
+              },
+              "height": {
+                "@id":"ship:height",
+                "@type":"xsd:string"
+              },
+              "weight": {
+                "@id":"ship:weight",
+                "@type":"xsd:string"
+              },
+              "width": {
+                "@id":"ship:width",
+                "@type":"xsd:string"
+              },
+              "lenght": {
+                "@id":"ship:lenght",
+                "@type":"xsd:string"
+              },
+              "shipment":{
+                "@id":"ship:hasPickupAddress",
+                "@type":"@id",
+                "@context":{
+                  "address":{
+                    "@id":"geo:lat",
+                    "@type":"xsd:string"
+                  },
+                  "apartment":{
+                    "@id":"ship:apartement",
+                    "@type":"xsd:string"
+                  },
+                  "postal":{
+                    "@id":"ship:postal",
+                    "@type":"xsd:double"
+                  },
+                  "city":{
+                    "@id":"ship:city",
+                    "@type":"xsd:string"
+                  }
+                }
+              },
+              "shipmentDelivery":{
+                "@id":"ship:deliveryTime",
+                "@type":"@id",
+                "@context":{
+                  "dateStart":{
+                    "@id":"geo:lat",
+                    "@type":"xsd:timestamp"
+                  },
+                  "dateStop":{
+                    "@id":"ship:apartement",
+                    "@type":"xsd:timestamp"
+                  }
+                }
+              },
+              "shipmentPickup":{
+                "@id":"ship:pickupTime",
+                "@type":"@id",
+                "@context":{
+                  "dateStart":{
+                    "@id":"geo:lat",
+                    "@type":"xsd:timestamp"
+                  },
+                  "dateStop":{
+                    "@id":"ship:apartement",
+                    "@type":"xsd:timestamp"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+   }
+}
