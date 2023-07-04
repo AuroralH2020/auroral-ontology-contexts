@@ -44,7 +44,7 @@
       "numberActiveProducer":{
         "@id":"ship:numberActiveProducer",
         "@type":"xsd:integer"
-      }
+      },
       "userProvides":{
         "@id":"ship:provides",
         "@type":"@id",
