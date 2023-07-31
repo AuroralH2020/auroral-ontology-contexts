@@ -1,0 +1,52 @@
+{
+    "@context": {
+        "core": "https://auroral.iot.linkeddata.es/def/core#",
+        "adapters": "https://auroral.iot.linkeddata.es/def/adapters#",
+        "saref": "https://saref.etsi.org/core#",
+        "om": "http://www.ontology-of-units-of-measure.org/page/om-2#",
+        "id": "core:hasId",
+        "serial": "core:serialNumber",
+        "version": "core:versionNumber",
+        "measures": {
+            "@id": "saref:makesMeasurement",
+            "@type": "@id",
+            "@context": {
+                "id": "saref:hasId",
+                "timestamp": "saref:hasTimeStamp",
+                "value": "saref:hasValue",
+                "relates": {
+                    "@id": "saref:relatesToProperty",
+                    "@type": "@vocab"
+                },
+                "measuredIn":{
+                    "@id":"saref:isMeasuredIn",
+                    "@type": "@vocab"
+                }
+            }
+        },
+        "device": "core:Device",
+        "humiditySensor": "adapters:HumiditySensor",
+        "sensor": "adapters:Sensor",
+        "thermometer": "adapters:Thermometer",
+        "airQualitySensor": "adapters:AirQualitySensor",
+        "weatherSensor": "adapters:WeatherSensor",
+        "relativeHumidity": "adapters:RelativeHumidity",
+        "atmosphoricPressure": "adapters:AtmosphoricPressure",
+        "ambientTemperature": "adapters:AmbientTemperature",
+        "noiseLevel": "adapters:NoiseLevel",
+        "illuminance": "adapters:Illuminance",
+        "cO2Concentration": "adapters:CO2Concentration",
+        "uVIndex": "adapters:UVIndex",
+        "pM10Concentration": "adapters:PM10Concentration",
+        "pM2.5Concentration": "adapters:PM2.5Concentration",        
+        "o3Concentration": "adapters:O3Concentration",
+        "relativeHumidityUnit": "om:Percentage",
+        "hectopascal": "om:hectopascal",
+        "degreeCelcius": "om:degreeCelcius",
+        "lux":"om:lux",
+        "partsPerMillion": "om:PartsPerMillion",
+        "wattPerSquareMetre": "om:wattPerSquareMetre",
+        "metrePerSecond": "om:PrefixedMetrePerSecond-Time",
+        "decibel": "core:Decibel"
+    }
+}
