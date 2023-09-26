@@ -1,0 +1,33 @@
+{
+  "@context": {
+    "http": "http://www.w3.org/2011/http#",
+    "dct": "http://purl.org/dc/terms/",
+    "cnt": "http://www.w3.org/2011/content#",
+    "httpVersion": {
+      "@id": "http:httpVersion",
+      "@type": "xsd:string"
+    },
+    "date": {
+      "@id": "dct:date",
+      "@type": "xsd:date"
+    },
+    "statusCodeValue": {
+      "@id": "http:statusCodeValue",
+      "@type": "xsd:integer"
+    },
+    "sc": {
+      "@id": "http:sc",
+      "@type": "@id"
+    },
+    "headers": {
+      "@id": "http:headers",
+      "@type": "@id"
+    },
+    "MessageHeader": "http:MessageHeader",
+    "body": {
+      "@id": "http:body",
+      "@type": "@id"
+    },
+    "Content": "cnt:Content"
+  }
+}
