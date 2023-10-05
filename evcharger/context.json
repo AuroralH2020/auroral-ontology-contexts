@@ -1,0 +1,214 @@
+{
+  "@context": {
+    "ev": "https://auroral.iot.linkeddata.es/def/electricalVehicle#",
+    "core": "https://auroral.iot.linkeddata.es/def/core#",
+    "saref": "https://saref.etsi.org/core#",
+    "book": "https://auroral.iot.linkeddata.es/def/car-booking#",
+    "cell": "https://auroral.iot.linkeddata.es/def/cell#",
+    "dc": "http://purl.org/dc/terms",
+    "geo": "http://www.w3.org/2003/01/geo/wgs84_pos",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "adapters": "https://auroral.iot.linkeddata.es/def/adapters#",
+    "identifier": {
+      "@id": "ev:identifierId",
+      "@type": "xsd:string"
+    },
+    "numberOfPoints": {
+      "@id": "ev:numberOfPoints",
+      "@type": "xsd:integer"
+    },
+    "generalComment": {
+      "@id": "ev:generalComment",
+      "@type": "xsd:integer"
+    },
+    "address": {
+      "@id": "ev:hasAddress",
+      "@type": "@id",
+      "@context": {
+        "adr": {
+          "@id": "book:address",
+          "@type": "xsd:string"
+        },
+        "city": {
+          "@id": "book:city",
+          "@type": "xsd:string"
+        },
+        "zip": {
+          "@id": "book:zip",
+          "@type": "xsd:string"
+        },
+        "telephone": {
+          "@id": "ev:contactTelephone",
+          "@type": "xsd:string"
+        },
+        "email": {
+          "@id": "ev:contactEmail",
+          "@type": "xsd:string"
+        },
+        "url": {
+          "@id": "ev:relatedURL",
+          "@type": "xsd:URI"
+        },
+        "comment": {
+          "@id": "ev:accessComment",
+          "@type": "xsd:string"
+        },
+        "location": {
+          "@id": "geo:location",
+          "@type": "@id",
+          "@context": {
+            "lat": {
+              "@id": "geo:lat",
+              "@type": "xsd:double"
+            },
+            "long": {
+              "@id": "geo:long",
+              "@type": "xsd:double"
+            },
+            "alt": {
+              "@id": "geo:alt",
+              "@type": "xsd:double"
+            }
+          }
+        },
+        "country": {
+          "@id": "ev:belongsTo",
+          "@type": "@id"
+        }
+      }
+    },
+    "type": {
+      "@id": "ev:usageType",
+      "@type": "@id",
+      "@context": {
+        "pay": {
+          "@id": "ev:isPayAtLocation",
+          "@type": "xsd:boolean"
+        },
+        "membership": {
+          "@id": "ev:isMemberShipRequired",
+          "@type": "xsd:boolean"
+        },
+        "access": {
+          "@id": "ev:isAccessKeyRequired",
+          "@type": "xsd:boolean"
+        },
+        "title": {
+          "@id": "ev:title",
+          "@type": "xsd:string"
+        }
+      }
+    },
+    "operator": {
+      "@id": "ev:hasOperator",
+      "@type": "@id",
+      "@context": {
+        "operatorid": {
+          "@id": "ev:operatorId",
+          "@type": "xsd:string"
+        },
+        "name": {
+          "@id": "ev:operatorName",
+          "@type": "xsd:string"
+        },
+        "website": {
+          "@id": "ev:webSiteUrl",
+          "@type": "xsd:URI"
+        },
+        "phone": {
+          "@id": "ev:phonePrimaryContact",
+          "@type": "xsd:string"
+        },
+        "private": {
+          "@id": "ev:isPrivateIndividual",
+          "@type": "xsd:boolean"
+        },
+        "book": {
+          "@id": "ev:bookingURL",
+          "@type": "xsd:URI"
+        },
+        "mail": {
+          "@id": "ev:contactEmail",
+          "@type": "xsd:string"
+        },
+        "title": {
+          "@id": "ev:title",
+          "@type": "xsd:string"
+        }
+      }
+    },
+    "connection": {
+      "@id": "ev:hasConnection",
+      "@type": "@id",
+      "@context": {
+        "quantity": {
+          "@id": "ev:quantity",
+          "@type": "xsd:string"
+        },
+        "CurrentType": {
+          "@id": "ev:CurrentType",
+          "@type": "@id",
+          "@context": {
+            "description": {
+              "@id": "ev:description",
+              "@type": "xsd:string"
+            },
+            "title": {
+              "@id": "ev:title",
+              "@type": "xsd:string"
+            }
+          }
+        },
+        "ConnectorType": {
+          "@id": "ev:ConnectorType",
+          "@type": "@id",
+          "@context": {
+            "formalName": {
+              "@id": "ev:formalName",
+              "@type": "xsd:string"
+            },
+            "isDiscontinued": {
+              "@id": "ev:isDiscontinued",
+              "@type": "xsd:boolean"
+            },
+            "isObsolete": {
+              "@id": "ev:isObsolete",
+              "@type": "xsd:boolean"
+            },
+            "title": {
+              "@id": "ev:title",
+              "@type": "xsd:string"
+            }
+          }
+        }
+      }
+    },
+    "dataProvider": {
+      "@id": "ev:hasDataProvider",
+      "@type": "@id",
+      "@context": {
+        "license": {
+          "@id": "dc:license",
+          "@type": "xsd:string"
+        },
+        "rights": {
+          "@id": "dc:rights",
+          "@type": "xsd:string"
+        }
+      }
+    },
+    "measuresProperty": {
+      "@id": "ev:measuresProperty",
+      "@type": "@id",
+      "@context": {
+        "StatusProperty": {
+          "@id": "adapters:StatusProperty",
+          "@context": {}
+        },
+        "EnergyProperty": {
+          "@id": "adapters:EnergyProperty"
+        }
+      }
+    }
+  }
+}
