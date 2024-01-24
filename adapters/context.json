@@ -64,6 +64,7 @@
           "kilogram" : "http://www.ontology-of-units-of-measure.org/resource/om-2/kilogram",
           "kelvin" : "http://www.ontology-of-units-of-measure.org/resource/om-2/kelvin",
           "litre" : "http://www.ontology-of-units-of-measure.org/resource/om-2/litre",
+          "percentage" : "http://www.ontology-of-units-of-measure.org/resource/om-2/Percentage",
           "unitHour": {
             "@id": "https://auroral.iot.linkeddata.es/def/core#hasTemporalUnit",
              "@type": "@id",
