@@ -10,7 +10,7 @@
         "@context": {
           "gpsLatitude": {
             "@id": "https://auroral.iot.linkeddata.es/def/adapters#GPSLatitude",
-            "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+            "@type": "http://www.w3.org/2001/XMLSchema#string"
           },
           "gpsLongitude": {
             "@id": "https://auroral.iot.linkeddata.es/def/adapters#GPSLongitude",
@@ -18,11 +18,11 @@
           },
           "gpsAltitude": {
             "@id": "https://auroral.iot.linkeddata.es/def/adapters#GPSAltitude",
-            "@type": "@vocab"
+            "@type": "http://www.w3.org/2001/XMLSchema#string"
           },
           "devPosition": {
             "@id": "https://auroral.iot.linkeddata.es/def/adapters#DevPosition",
-            "@type": "@vocab"
+            "@type": "http://www.w3.org/2001/XMLSchema#string"
           }
         }
       },
