@@ -4,6 +4,28 @@
         "@id": "https://auroral.iot.linkeddata.es/def/core#hasID",
         "@type": "http://www.w3.org/2001/XMLSchema#string"
       },
+      "property": {
+        "@id": "https://saref.etsi.org/core/measuresProperty",
+        "@type": "@id",
+        "@context": {
+          "gpsLatitude": {
+            "@id": "https://auroral.iot.linkeddata.es/def/adapters#GPSLatitude",
+            "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+          },
+          "gpsLongitude": {
+            "@id": "https://auroral.iot.linkeddata.es/def/adapters#GPSLongitude",
+            "@type": "http://www.w3.org/2001/XMLSchema#string"
+          },
+          "gpsAltitude": {
+            "@id": "https://auroral.iot.linkeddata.es/def/adapters#GPSAltitude",
+            "@type": "@vocab"
+          },
+          "devPosition": {
+            "@id": "https://auroral.iot.linkeddata.es/def/adapters#DevPosition",
+            "@type": "@vocab"
+          }
+        }
+      },
       "measurement": {
         "@id": "https://saref.etsi.org/core/makesMeasurement",
         "@type": "@id",
